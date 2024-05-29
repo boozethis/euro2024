@@ -9,7 +9,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <style>
+        html {
+            font-size: 16px; /* Base font size */
+        }
         body {
             font-family: 'Google Sans', sans-serif;
             color: #ffffff;
@@ -20,6 +24,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-size: 1rem; /* Set default font size to 1rem, which equals 16px */
         }
         .container {
             max-width: 800px;
@@ -35,20 +40,24 @@
         h1 {
             color: #ffffff;
             text-align: center;
+            font-size: 2rem; /* 32px */
         }
         h2 {
             color: #ffffff;
             text-align: left;
+            font-size: 1.5rem; /* 24px */
         }
         .intro, .rules, .prizes, .register, .prices, .goals, .groups {
             margin-bottom: 20px;
+            font-size: 1rem; /* 16px */
         }
         a {
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1rem; /* 16px */
         }
-        .cta {
+        .cta, .tweet-button, .stripe-button {
             display: inline-block;
             padding: 10px 20px;
             background-color: #FFD700;
@@ -56,17 +65,16 @@
             text-decoration: none;
             border-radius: 5px;
             text-align: center;
+            font-size: 1rem; /* 16px */
+            border: none; /* Remove default button border */
+            cursor: pointer; /* Add cursor pointer */
         }
-        .cta:hover {
+        .cta:hover, .tweet-button:hover, .stripe-button:hover {
             background-color: #FFC300;
         }
         .tweet-button {
-            padding: 10px 20px;
             background-color: #1DA1F2;
             color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
             margin: 10px 0;
         }
         .tweet-button:hover {
@@ -75,6 +83,7 @@
         .prices span {
             display: block;
             margin: 5px 0;
+            font-size: 1rem; /* 16px */
         }
         .groupA { color: #90EE90; } /* Light Green */
         .groupB { color: #F08080; } /* Light Coral */
@@ -85,9 +94,16 @@
         .footer {
             margin-top: 20px;
             text-align: center;
+            font-size: 1rem; /* 16px */
         }
         .footer img {
             width: 30px; /* Adjust the width as needed */
+        }
+        /* Style for Stripe Buy Button */
+        stripe-buy-button {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -99,6 +115,10 @@
         <div class="intro">
             <p>Predict the Euro 2024 top performers to win big. The more players, the bigger the prize.</p>
             <p>The deadline to join is 5pm BST on Friday 14th June.</p>
+        </div>
+        
+        <div class="register">
+            <a href="https://akr.st/euro2024" class="cta" target="_blank">Click here to join</a>
         </div>
         
         <div class="rules">
@@ -121,7 +141,7 @@
         </div>
         
         <div class="tweet-button-container">
-            <a href="https://x.com/intent/tweet?text=Check%20out%20LastManBalling.com%20to%20join%20the%20ultimate%20Euro%202024%20prediction%20game" class="tweet-button" target="_blank">Share on X</a>
+            <a href="https://twitter.com/intent/tweet?text=Check%20out%20LastManBalling.com%20to%20join%20the%20ultimate%20Euro%202024%20prediction%20game" class="tweet-button" target="_blank">Share on X</a>
         </div>
 
         <div class="prices">
@@ -173,6 +193,20 @@
             <h2>Register Now</h2>
             <p>Click the link below to register and submit your team selections:</p>
             <a href="https://akr.st/euro2024" class="cta" target="_blank">Play Here</a>
+        </div>
+		
+		<div id="payment-form-container">
+            <h2>Payment</h2>
+            <p>Upon submitting your team selections, you will be added to a WhatsApp group and sent payment details. If you prefer to pay now via secure Stripe payments, rather than bank transfer, you can use the button below.</p>
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1PLjKUFqQhAnLWYKiPiIASL6"
+  publishable-key="pk_live_tfBhRFqfPZAUYPDiPLwwCeTY"
+>
+</stripe-buy-button>
         </div>
     </div>
     <div class="footer">
