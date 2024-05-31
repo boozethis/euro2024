@@ -9,7 +9,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <style>
         html {
             font-size: 16px; /* Base font size */
@@ -57,7 +56,7 @@
             font-weight: bold;
             font-size: 1rem; /* 16px */
         }
-        .cta, .tweet-button, .stripe-button {
+        .cta, .tweet-button {
             display: inline-block;
             padding: 10px 20px;
             background-color: #FFD700;
@@ -69,7 +68,7 @@
             border: none; /* Remove default button border */
             cursor: pointer; /* Add cursor pointer */
         }
-        .cta:hover, .tweet-button:hover, .stripe-button:hover {
+        .cta:hover, .tweet-button:hover {
             background-color: #FFC300;
         }
         .tweet-button {
@@ -99,12 +98,6 @@
         .footer img {
             width: 30px; /* Adjust the width as needed */
         }
-        /* Style for Stripe Buy Button */
-        stripe-buy-button {
-            display: block;
-            text-align: center;
-            margin: 10px 0;
-        }
     </style>
 </head>
 <body>
@@ -113,31 +106,30 @@
         <h1>Euro 2024 Last Man Balling</h1>
         
         <div class="intro">
-            <p>Predict the Euro 2024 top performers to win big. The more players, the bigger the prize.</p>
-            <p>The deadline to join is 5pm BST on Friday 14th June.</p>
+            <p>Choose three teams from the Euro 2024 Last Man Balling pricelist and see if your selections can outscore everyone else.</p>
+            <p>The deadline to join is <b>5pm BST on Friday 14th June</b>.</p>
         </div>
         
         <div class="register">
-            <a href="https://akr.st/euro2024" class="cta" target="_blank">Click here to join</a>
+            <a href="https://akr.st/euro2024" class="cta" target="_blank">Click here to play</a>
         </div>
         
         <div class="rules">
             <h2>How to Play</h2>
-            <p>It's £10 to enter, to be paid by bank transfer. All players must provide a mobile number, to be added to a WhatsApp group and receive payment details.</p>
             <p>Pick 2 or 3 teams without exceeding the £50 total budget. Earn 3 points for each win and 1 point for each draw, based on your teams' performance throughout the entirety of Euro 2024. Draws only count in the group stage as the three points will be allocated to the team that progresses through the knockout rounds, regardless of the score at full-time.</p>
             <p>Teams cannot be replaced.</p>
             <p>If you go over the £50 budget, you will not be included in the game so please double check your total cost before submitting your selections.</p>
-            <p>The player whose chosen teams have the most points at the end, wins the entire prize pot.</p>
+            <p>The player whose chosen teams have the most points at the end, wins a cash prize.</p>
         </div>
         
         <div class="tiebreaker">
             <h2>Tiebreaker</h2>
-            <p>In the event of a tie at the end of the tournament, such as if more than one person picks the same teams and gets the same points, the winner will be decided by a tiebreaker. When submitting teams, everyone must predict the total number of goals scored throughout the tournament.</p>
+            <p>In the event of a tie at the end of the tournament, such as if more than one person picks the same teams, the winner will be decided by a tiebreaker. When submitting teams, everyone must predict the total number of goals scored throughout the tournament.</p>
         </div>
         
         <div class="prizes">
             <h2>Prizes</h2>
-            <p>The winner will receive ALL the entry money collected. There are no prizes for second or third place. The more people who play, the bigger the prize, so invite your friends to join the fun!</p>
+            <p>The overall winner will receive a cash prize. The more people who play, the bigger the prize, so invite your friends to join the fun!</p>
         </div>
         
         <div class="tweet-button-container">
@@ -193,20 +185,6 @@
             <h2>Register Now</h2>
             <p>Click the link below to register and submit your team selections:</p>
             <a href="https://akr.st/euro2024" class="cta" target="_blank">Play Here</a>
-        </div>
-		
-		<div id="payment-form-container">
-            <h2>Payment</h2>
-            <p>Upon submitting your team selections, you will be added to a WhatsApp group and sent payment details. If you prefer to pay now via secure Stripe payments, rather than bank transfer, you can use the button below.</p>
-<script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
-
-<stripe-buy-button
-  buy-button-id="buy_btn_1PLjKUFqQhAnLWYKiPiIASL6"
-  publishable-key="pk_live_tfBhRFqfPZAUYPDiPLwwCeTY"
->
-</stripe-buy-button>
         </div>
     </div>
     <div class="footer">
