@@ -46,4 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
             answer.style.display = answer.style.display === "block" ? "none" : "block";
         });
     });
+
+    // Active nav item
+    const navItems = document.querySelectorAll(".nav-item");
+    navItems.forEach(item => {
+        item.addEventListener("click", () => {
+            navItems.forEach(nav => nav.classList.remove("nav-item-active"));
+            item.classList.add("nav-item-active");
+        });
+    });
 });
