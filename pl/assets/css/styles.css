@@ -91,8 +91,9 @@ section {
 
 .prizepot-info {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Add gap between boxes */
 }
 
 .prizepot-item {
@@ -102,16 +103,15 @@ section {
     background-color: #37003C;
     border-radius: 10px;
     color: #fff;
-    margin: 10px;
     padding: 20px;
     text-align: center;
-    width: 22%; /* Adjusted width to fit 4 boxes in a row */
-    position: relative;
+    flex: 1 1 calc(25% - 20px); /* Flex basis to fit 4 items across */
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
     .prizepot-item {
-        width: 45%; /* Adjusted width for 2x2 grid on mobile */
+        flex: 1 1 calc(50% - 20px); /* Flex basis for 2x2 grid on mobile */
     }
 }
 
