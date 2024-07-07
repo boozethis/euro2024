@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
-    const corsProxy = "https://api.allorigins.win/raw?url="; // Public CORS proxy
+    const corsProxy = "https://cors-anywhere.herokuapp.com/"; // Another Public CORS proxy
 
     fetch(`${corsProxy}https://fantasy.premierleague.com/api/bootstrap-static/`)
         .then(response => {
             console.log("Fetched bootstrap-static data", response);
-            return response.text(); // Use text to log the raw response
+            return response.json();
         })
-        .then(text => {
-            console.log("Raw bootstrap-static data", text);
-            const data = JSON.parse(text); // Parse the raw text manually
+        .then(data => {
             console.log("Parsed bootstrap-static data", data);
             let nextGameweekId;
             for (const event of data.events) {
@@ -23,11 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 fetch(`${corsProxy}https://fantasy.premierleague.com/api/fixtures/?event=${nextGameweekId}`)
                     .then(response => {
                         console.log("Fetched fixtures data", response);
-                        return response.text(); // Use text to log the raw response
+                        return response.json();
                     })
-                    .then(text => {
-                        console.log("Raw fixtures data", text);
-                        const fixtures = JSON.parse(text); // Parse the raw text manually
+                    .then(fixtures => {
                         console.log("Parsed fixtures data", fixtures);
                         fixtures.forEach(fixture => {
                             const fixtureItem = document.createElement("div");
