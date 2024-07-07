@@ -21,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 fetch(`${corsProxy}https://fantasy.premierleague.com/api/fixtures/?event=${nextGameweekId}`)
                     .then(response => {
                         console.log("Fetched fixtures data", response);
-                        return response.json();
+                        return response.text(); // Use text to log the raw response
                     })
-                    .then(fixtures => {
+                    .then(text => {
+                        console.log("Raw fixtures data", text);
+                        const fixtures = JSON.parse(text); // Parse the raw text manually
                         console.log("Parsed fixtures data", fixtures);
                         fixtures.forEach(fixture => {
                             const fixtureItem = document.createElement("div");
