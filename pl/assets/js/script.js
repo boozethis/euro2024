@@ -1,17 +1,39 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
 
-    fetch("https://fantasy.premierleague.com/api/fixtures/")
+    fetch("https://fantasy.premierleague.com/api/bootstrap-static/")
         .then(response => response.json())
         .then(data => {
-            data.forEach(fixture => {
-                const fixtureItem = document.createElement("div");
-                fixtureItem.textContent = `${fixture.team_h} vs ${fixture.team_a} (${new Date(fixture.kickoff_time).toLocaleString()})`;
-                fixturesList.appendChild(fixtureItem);
-            });
+            let nextGameweekId;
+            for (const event of data.events) {
+                if (event.is_next) {
+                    nextGameweekId = event.id;
+                    break;
+                }
+            }
+            if (nextGameweekId) {
+                fetch(`https://fantasy.premierleague.com/api/fixtures/?event=${nextGameweekId}`)
+                    .then(response => response.json())
+                    .then(fixtures => {
+                        fixtures.forEach(fixture => {
+                            const fixtureItem = document.createElement("div");
+                            const homeTeam = data.teams.find(team => team.id === fixture.team_h).name;
+                            const awayTeam = data.teams.find(team => team.id === fixture.team_a).name;
+                            const kickoffTime = new Date(fixture.kickoff_time).toLocaleString();
+                            fixtureItem.textContent = `${homeTeam} vs ${awayTeam} (${kickoffTime})`;
+                            fixturesList.appendChild(fixtureItem);
+                        });
+                    })
+                    .catch(error => {
+                        console.error("Error fetching fixtures:", error);
+                        fixturesList.textContent = "Unable to load fixtures.";
+                    });
+            } else {
+                fixturesList.textContent = "No upcoming fixtures found.";
+            }
         })
         .catch(error => {
-            console.error("Error fetching fixtures:", error);
+            console.error("Error fetching bootstrap data:", error);
             fixturesList.textContent = "Unable to load fixtures.";
         });
 
