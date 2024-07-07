@@ -43,12 +43,33 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
-nav ul li a {
-    color: #00FF87;
+.nav-item {
+    display: block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #00FF87, #02EFFE);
+    color: #37003C;
     text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.nav-item:hover, .nav-item:focus {
+    background: #fff;
+    color: #37003C;
+}
+
+.nav-item-purple {
+    background: linear-gradient(to right, #8A2BE2, #4B0082);
+    color: #fff;
+}
+
+.nav-item-active {
+    background: #fff;
+    color: #37003C;
 }
 
 main {
@@ -112,8 +133,6 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 footer img {
