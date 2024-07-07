@@ -27,11 +27,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         console.log("Parsed fixtures data", fixtures);
                         fixtures.forEach(fixture => {
                             const fixtureItem = document.createElement("div");
-                            const homeTeam = data.teams.find(team => team.id === fixture.team_h).name;
-                            const awayTeam = data.teams.find(team => team.id === fixture.team_a).name;
-                            const kickoffTime = new Date(fixture.kickoff_time).toLocaleString();
-                            fixtureItem.textContent = `${homeTeam} vs ${awayTeam} (${kickoffTime})`;
-                            fixturesList.appendChild(fixtureItem);
+                            const homeTeam = data.teams.find(team => team.id === fixture.team_h);
+                            const awayTeam = data.teams.find(team => team.id === fixture.team_a);
+                            if (homeTeam && awayTeam) {
+                                const kickoffTime = new Date(fixture.kickoff_time).toLocaleString();
+                                fixtureItem.textContent = `${homeTeam.name} vs ${awayTeam.name} (${kickoffTime})`;
+                                fixturesList.appendChild(fixtureItem);
+                            } else {
+                                console.warn("Home or away team not found", fixture);
+                            }
                         });
                     })
                     .catch(error => {
