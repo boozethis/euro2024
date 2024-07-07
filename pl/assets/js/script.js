@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch(`${corsProxy}https://fantasy.premierleague.com/api/bootstrap-static/`)
         .then(response => {
             console.log("Fetched bootstrap-static data", response);
-            return response.json();
+            return response.text(); // Use text to log the raw response
         })
-        .then(data => {
+        .then(text => {
+            console.log("Raw bootstrap-static data", text);
+            const data = JSON.parse(text); // Parse the raw text manually
             console.log("Parsed bootstrap-static data", data);
             let nextGameweekId;
             for (const event of data.events) {
