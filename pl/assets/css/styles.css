@@ -10,75 +10,34 @@ header {
     background-color: #37003C;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.logo {
+header .logo {
     width: 150px;
+    animation: logo-animation 1s ease-in-out;
+}
+
+@keyframes logo-animation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
-}
-
-nav ul li a {
-    color: #00FF87;
-    text-decoration: none;
-}
-
-h1, h2 {
-    color: #02EFFE;
-}
-
-section {
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.prizepot-info {
-    display: flex;
-    justify-content: space-around;
-}
-
-.prizepot-item {
-    background-color: #37003C;
-    border-radius: 10px;
-    color: #fff;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    width: 20%;
-}
-
-#countdown-timer {
-    font-size: 2em;
-    text-align: center;
-}
-
-.faq-item {
-    margin-bottom: 10px;
-}
-
-.faq-item h3 {
-    cursor: pointer;
-}
-
-footer {
-    background-color: #37003C;
-    padding: 10px;
-    text-align: center;
-}
-
-footer img {
-    width: 30px;
-    margin: 0 10px;
-}
