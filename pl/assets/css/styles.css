@@ -73,7 +73,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 120px;
+    padding-top: 180px;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -95,6 +95,9 @@ section {
 }
 
 .prizepot-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #37003C;
     border-radius: 10px;
     color: #fff;
@@ -102,6 +105,27 @@ section {
     padding: 20px;
     text-align: center;
     width: 45%;
+    position: relative;
+}
+
+.prizepot-item .icon {
+    margin-bottom: 10px;
+}
+
+.prizepot-ballers {
+    background: linear-gradient(to right, #4B0082, #8A2BE2);
+}
+
+.prizepot-eliminated {
+    background: linear-gradient(to right, #ff4b5c, #ff0040);
+}
+
+.prizepot-balling {
+    background: linear-gradient(to right, #00FF87, #02EFFE);
+}
+
+.prizepot-prizepot {
+    background: linear-gradient(to right, #8A2BE2, #4B0082);
 }
 
 #countdown-timer {
