@@ -73,7 +73,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 180px;
+    padding-top: 160px;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -108,7 +108,9 @@ section {
     position: relative;
 }
 
-.prizepot-item .icon {
+.prizepot-item .icon img {
+    width: 40px; /* Adjust the size of the icons here */
+    height: auto;
     margin-bottom: 10px;
 }
 
