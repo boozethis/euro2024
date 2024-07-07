@@ -112,6 +112,7 @@ section {
     width: 40px; /* Adjust the size of the icons here */
     height: auto;
     margin-bottom: 10px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
 }
 
 .prizepot-ballers {
