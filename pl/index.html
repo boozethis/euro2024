@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Last Man Balling Logo" class="logo">
+    <header id="header">
+        <span class="logo"><img src="images/logo.png" alt="Last Man Balling Logo" class="logo"></span>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#fixtures">Fixtures</a></li>
+                <li><a href="#fixtures">Countdown</a></li>
                 <li><a href="#prizepot">Prizepot</a></li>
                 <li><a href="#rules">Rules</a></li>
                 <li><a href="#join">Join</a></li>
@@ -21,7 +21,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section id="about">
             <h1>Last Man Balling</h1>
@@ -51,11 +51,18 @@
         <section id="rules">
             <h2>Rules</h2>
             <ul>
-                <li>🟢 Choose one team each week</li>
-                <li>🔴 You can only pick each team once</li>
-                <li>⚽ If your team wins, you stay in the game</li>
-                <li>❌ If your team loses or draws, you're out</li>
-                <li>🏆 Last man standing wins the prizepot</li>
+                <li>💷 Pay £10 to join Last Man Balling. You will be asked to provide a name (ideally your Twitter username) and an email address during the checkout process. You will be provided with a secret Personal Identification Number (PIN) with your payment confirmation.</li>
+                <li>🍯 The entry fees will contribute to the overall prize (or ‘Prizepot’) for winning the game. For the first game, 90% of entry fees will go into the prizepot and the remainder will go towards running costs such as hosting, promotional and administration fees. The more Ballers, the bigger the Prizepot.</li>
+                <li>🎯 Every week you must select a team that you think will win. To submit your prediction, you must complete an online form where you will enter your name, your PIN and the team you have chosen. All predictions must be submitted before the Gameweek deadline, which is 6PM every Friday.</li>
+                <li>🚫 You can only choose each team once. For example, if you chose Manchester City in a previous Gameweek, you cannot choose them again. If you submit a prediction for a team that you have already chosen, it will be treated as a failed submission.</li>
+                <li>🆎 If you have joined and fail to submit a selection before the deadline you will be assigned the first team that you haven’t already selected, alphabetically. For example, if you have already chosen Arsenal but haven’t used Aston Villa, you will be assigned Aston Villa.</li>
+                <li>✅ If your predicted team wins you survive and carry on Balling until the next week.</li>
+                <li>❌ If your predicted team draws or loses, you will lose a life.</li>
+                <li>3️⃣ Ballers start with three lives. Once your lives reach 0, your Balling days are over, and you are eliminated from the game.</li>
+                <li>🏆 The last remaining Baller, aka the Last Man Balling, wins the Prizepot. Winners will be contacted via email and/or social media to confirm payment details and will be paid within ten working days.</li>
+                <li>💀 If everyone is eliminated without a single Baller being left standing, there will be a rollover (or a ‘Ballover’). For example, if three Ballers remain going into a Gameweek, and they all end up losing their final life in the same set of fixtures, everyone is eliminated and a Ballover will occur.</li>
+                <li>🧻 In the event of a Ballover, Ballers wishing to re-join must pay a £10 entry fee again. All previous team predictions are reset and the prizepot will continue to build.</li>
+                <li>❓If you have any questions, please ask in the <a href="https://t.me/lastmanballing" target="_blank" rel="external">Telegram group</a>.</li>
             </ul>
         </section>
 
@@ -68,27 +75,27 @@
             <h2>FAQ</h2>
             <div class="faq-item">
                 <h3>What is Last Man Balling?</h3>
-                <p>Last Man Balling is a weekly soccer competition where you choose a team to win each week. If your team wins, you stay in the game; if they lose or draw, you're out.</p>
+                <div class="faq-content">Last Man Balling is a weekly soccer competition where you choose a team to win each week. If your team wins, you stay in the game; if they lose or draw, you're out.</div>
             </div>
             <div class="faq-item">
                 <h3>How much does it cost to join?</h3>
-                <p>The entry fee is £10.</p>
+                <div class="faq-content">The entry fee is £10.</div>
             </div>
             <div class="faq-item">
                 <h3>How do I pay?</h3>
-                <p>You can pay via the embedded Stripe payment form in the Join section.</p>
+                <div class="faq-content">You can pay via the embedded Stripe payment form in the Join section.</div>
             </div>
             <div class="faq-item">
                 <h3>What happens if my team draws?</h3>
-                <p>If your team draws, you are eliminated from the competition.</p>
+                <div class="faq-content">If your team draws, you are eliminated from the competition.</div>
             </div>
             <div class="faq-item">
                 <h3>How is the prizepot calculated?</h3>
-                <p>The prizepot is the total entry fees minus any admin costs.</p>
+                <div class="faq-content">The prizepot is the total entry fees minus any admin costs.</div>
             </div>
             <div class="faq-item">
                 <h3>Can I join after the competition starts?</h3>
-                <p>No, entries close at the deadline before the first game of each week.</p>
+                <div class="faq-content">No, entries close at the deadline before the first game of each week.</div>
             </div>
         </section>
     </main>
