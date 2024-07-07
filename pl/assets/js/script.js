@@ -12,21 +12,15 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             console.log("Parsed bootstrap-static data", data);
             let currentGameweekId;
-            let nextGameweekId;
             for (const event of data.events) {
                 if (event.is_current) {
                     currentGameweekId = event.id;
-                }
-                if (event.is_next) {
-                    nextGameweekId = event.id;
+                    break;
                 }
             }
             console.log("Current gameweek ID", currentGameweekId);
-            console.log("Next gameweek ID", nextGameweekId);
-            
-            const gameweekId = currentGameweekId || nextGameweekId;
-            if (gameweekId) {
-                const fixturesUrl = corsProxy + encodeURIComponent(`https://fantasy.premierleague.com/api/fixtures/?event=${gameweekId}`);
+            if (currentGameweekId) {
+                const fixturesUrl = corsProxy + encodeURIComponent(`https://fantasy.premierleague.com/api/fixtures/?event=${currentGameweekId}`);
                 fetch(fixturesUrl)
                     .then(response => {
                         console.log("Fetched fixtures data", response);
@@ -53,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         fixturesList.innerHTML = '<p>Unable to load fixtures. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
                     });
             } else {
-                fixturesList.innerHTML = '<p>No upcoming fixtures found. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+                fixturesList.innerHTML = '<p>No current gameweek found. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
             }
         })
         .catch(error => {
