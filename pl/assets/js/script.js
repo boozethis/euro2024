@@ -2,8 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
 
     fetch("https://fantasy.premierleague.com/api/bootstrap-static/")
-        .then(response => response.json())
+        .then(response => {
+            console.log("Fetched bootstrap-static data", response);
+            return response.json();
+        })
         .then(data => {
+            console.log("Parsed bootstrap-static data", data);
             let nextGameweekId;
             for (const event of data.events) {
                 if (event.is_next) {
@@ -11,10 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     break;
                 }
             }
+            console.log("Next gameweek ID", nextGameweekId);
             if (nextGameweekId) {
                 fetch(`https://fantasy.premierleague.com/api/fixtures/?event=${nextGameweekId}`)
-                    .then(response => response.json())
+                    .then(response => {
+                        console.log("Fetched fixtures data", response);
+                        return response.json();
+                    })
                     .then(fixtures => {
+                        console.log("Parsed fixtures data", fixtures);
                         fixtures.forEach(fixture => {
                             const fixtureItem = document.createElement("div");
                             const homeTeam = data.teams.find(team => team.id === fixture.team_h).name;
