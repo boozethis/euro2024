@@ -1,0 +1,84 @@
+body {
+    font-family: 'Google Sans', sans-serif;
+    background-color: #37003C;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #37003C;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #00FF87;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #02EFFE;
+}
+
+section {
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prizepot-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.prizepot-item {
+    background-color: #37003C;
+    border-radius: 10px;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 20%;
+}
+
+#countdown-timer {
+    font-size: 2em;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #37003C;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+}
