@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const corsProxy = "https://corsproxy.io/?"; // Public CORS proxy
 
     const bootstrapUrl = corsProxy + encodeURIComponent("https://fantasy.premierleague.com/api/bootstrap-static/");
-    const fixturesUrl = (nextGameweekId) => corsProxy + encodeURIComponent(`https://fantasy.premierleague.com/api/fixtures/?event=${nextGameweekId}`);
 
     fetch(bootstrapUrl)
         .then(response => {
@@ -12,22 +11,24 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(data => {
             console.log("Parsed bootstrap-static data", data);
-            let nextGameweekId;
+            let currentGameweekId;
             for (const event of data.events) {
-                if (event.is_next) {
-                    nextGameweekId = event.id;
+                if (event.is_current) {
+                    currentGameweekId = event.id;
                     break;
                 }
             }
-            console.log("Next gameweek ID", nextGameweekId);
-            if (nextGameweekId) {
-                fetch(fixturesUrl(nextGameweekId))
+            console.log("Current gameweek ID", currentGameweekId);
+            if (currentGameweekId) {
+                const fixturesUrl = corsProxy + encodeURIComponent(`https://fantasy.premierleague.com/api/fixtures/?event=${currentGameweekId}`);
+                fetch(fixturesUrl)
                     .then(response => {
                         console.log("Fetched fixtures data", response);
                         return response.json();
                     })
                     .then(fixtures => {
                         console.log("Parsed fixtures data", fixtures);
+                        fixturesList.innerHTML = ''; // Clear fallback content
                         fixtures.forEach(fixture => {
                             const fixtureItem = document.createElement("div");
                             const homeTeam = data.teams.find(team => team.id === fixture.team_h);
@@ -43,15 +44,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     })
                     .catch(error => {
                         console.error("Error fetching fixtures:", error);
-                        fixturesList.textContent = "Unable to load fixtures.";
+                        fixturesList.innerHTML = '<p>Unable to load fixtures. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
                     });
             } else {
-                fixturesList.textContent = "No upcoming fixtures found.";
+                fixturesList.innerHTML = '<p>No current gameweek found. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
             }
         })
         .catch(error => {
             console.error("Error fetching bootstrap data:", error);
-            fixturesList.textContent = "Unable to load fixtures.";
+            fixturesList.innerHTML = '<p>Unable to load fixtures. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
         });
 
     // Countdown timer
