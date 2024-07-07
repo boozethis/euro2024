@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
-    const corsProxy = "http://localhost:3000/api"; // Your local proxy server
+    const corsProxy = "https://corsproxy.io/?"; // Public CORS proxy
 
-    fetch(`${corsProxy}/bootstrap-static/`)
+    const bootstrapUrl = corsProxy + encodeURIComponent("https://fantasy.premierleague.com/api/bootstrap-static/");
+    const fixturesUrl = (nextGameweekId) => corsProxy + encodeURIComponent(`https://fantasy.premierleague.com/api/fixtures/?event=${nextGameweekId}`);
+
+    fetch(bootstrapUrl)
         .then(response => {
             console.log("Fetched bootstrap-static data", response);
             return response.json();
@@ -18,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             console.log("Next gameweek ID", nextGameweekId);
             if (nextGameweekId) {
-                fetch(`${corsProxy}/fixtures/?event=${nextGameweekId}`)
+                fetch(fixturesUrl(nextGameweekId))
                     .then(response => {
                         console.log("Fetched fixtures data", response);
                         return response.json();
