@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last Man Balling</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header id="header">
-        <span class="logo"><img src="images/logo.png" alt="Last Man Balling Logo" class="logo"></span>
+    <header>
+        <img src="images/logo.png" alt="Last Man Balling Logo">
         <nav>
             <ul>
-                <li><a href="#about" class="nav-item">About</a></li>
-                <li><a href="#countdown" class="nav-item">Countdown</a></li>
-                <li><a href="#fixtures" class="nav-item">Fixtures</a></li>
-                <li><a href="#prizepot" class="nav-item">Prizepot</a></li>
-                <li><a href="#rules" class="nav-item">Rules</a></li>
-                <li><a href="#join" class="nav-item nav-item-purple">Join</a></li>
-                <li><a href="#faq" class="nav-item">FAQ</a></li>
-                <li><a href="#waitinglist" class="nav-item">Waiting List</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#countdown">Countdown</a></li>
+                <li class="nav-item"><a href="#fixtures">Fixtures</a></li>
+                <li class="nav-item"><a href="#prizepot">Prizepot</a></li>
+                <li class="nav-item"><a href="#rules">Rules</a></li>
+                <li class="nav-item"><a href="#join">Join</a></li>
+                <li class="nav-item"><a href="#faq">FAQ</a></li>
+                <li class="nav-item"><a href="#waitinglist">Waiting List</a></li>
             </ul>
         </nav>
     </header>
@@ -37,145 +36,54 @@
 
         <section id="fixtures">
             <h2>Weekly Fixtures</h2>
-            <div id="fixtures-list"></div>
+            <div id="fixtures-list">
+                <p>If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>
+            </div>
         </section>
 
         <section id="prizepot">
             <h2>Prizepot</h2>
             <p>90% of all entry fees contribute to the overall prize that will be won by the Last Man Balling. The more people who play, the bigger the Prizepot.</p>
-            <div class="prizepot-info">
-                <div class="prizepot-item prizepot-ballers">
-                    <span class="icon"><img src="images/ballers-icon.png" alt="Ballers Icon"></span>
-                    <strong id="ballers-count">0</strong>
-                    <b>Ballers</b>
-                </div>
-                <div class="prizepot-item prizepot-prizepot">
-                    <span class="icon"><img src="images/prizepot-icon.png" alt="Prizepot Icon"></span>
-                    <strong id="prizepot-amount">£0</strong>
-                    <b>Prizepot</b>
-                </div>
-                <div class="prizepot-item prizepot-eliminated">
-                    <span class="icon"><img src="images/eliminated-icon.png" alt="Eliminated Icon"></span>
-                    <strong id="eliminated-count">0</strong>
-                    <b>Eliminated</b>
-                </div>
-                <div class="prizepot-item prizepot-balling">
-                    <span class="icon"><img src="images/balling-icon.png" alt="Balling Icon"></span>
-                    <strong id="active-count">0</strong>
-                    <b>Balling</b>
-                </div>
+            <div class="prizepot-stats">
+                <div class="prizepot-item">0<br>Ballers</div>
+                <div class="prizepot-item">0<br>Eliminated</div>
+                <div class="prizepot-item">0<br>Balling</div>
+                <div class="prizepot-item">£0<br>Prizepot</div>
             </div>
         </section>
 
         <section id="rules">
             <h2>Rules</h2>
-            <ul>
-                <li>💷 Pay £10 to join Last Man Balling. You will be asked to provide a name (ideally your Twitter username) and an email address during the checkout process. You will be provided with a secret Personal Identification Number (PIN) with your payment confirmation.</li>
-                <li>🍯 The entry fees will contribute to the overall prize (or ‘Prizepot’) for winning the game. For the first game, 90% of entry fees will go into the prizepot and the remainder will go towards running costs such as hosting, promotional and administration fees. The more Ballers, the bigger the Prizepot.</li>
-                <li>🎯 Every week you must select a team that you think will win. To submit your prediction, you must complete an online form where you will enter your name, your PIN and the team you have chosen. All predictions must be submitted before the Gameweek deadline, which is 6PM every Friday.</li>
-                <li>🚫 You can only choose each team once. For example, if you chose Manchester City in a previous Gameweek, you cannot choose them again. If you submit a prediction for a team that you have already chosen, it will be treated as a failed submission.</li>
-                <li>🆎 If you have joined and fail to submit a selection before the deadline you will be assigned the first team that you haven’t already selected, alphabetically. For example, if you have already chosen Arsenal but haven’t used Aston Villa, you will be assigned Aston Villa.</li>
-                <li>✅ If your predicted team wins you survive and carry on Balling until the next week.</li>
-                <li>❌ If your predicted team draws or loses, you will lose a life.</li>
-                <li>3️⃣ Ballers start with three lives. Once your lives reach 0, your Balling days are over, and you are eliminated from the game.</li>
-                <li>🏆 The last remaining Baller, aka the Last Man Balling, wins the Prizepot. Winners will be contacted via email and/or social media to confirm payment details and will be paid within ten working days.</li>
-                <li>💀 If everyone is eliminated without a single Baller being left standing, there will be a Ballover. For example, if three Ballers remain going into a Gameweek, and they all end up losing their final life in the same set of fixtures, everyone is eliminated and a Ballover will occur.</li>
-                <li>🧻 In the event of a Ballover, Ballers wishing to re-join must pay a £10 entry fee again. All previous team predictions are reset and the prizepot will continue to build.</li>
-                <li>❓If you have any questions, please ask in the <a href="https://wa.me/lastmanballing" target="_blank" rel="external">WhatsApp group</a>.</li>
-            </ul>
+            <p>📜 Pay £10 to join Last Man Balling. You will be asked to provide a name (ideally your Twitter username) and an email address during the checkout process. You will be provided with a secret Personal Identification Number (PIN) with your payment confirmation.</p>
+            <p>🏆 The entry fees will contribute to the overall prize (or ‘Prizepot’) for winning the game. For the first game, 90% of entry fees will go into the prizepot and the remainder will go towards running costs such as hosting, promotional and administration fees. The more Ballers, the bigger the Prizepot.</p>
+            <p>🎯 Every week you must select a team that you think will win. To submit your prediction, you must complete an online form where you will enter your name, your PIN and the team you have chosen. All predictions must be submitted before the Gameweek deadline, which is 6PM every Friday.</p>
+            <p>❌ You can only choose each team once. For example, if you choose Manchester City in a previous Gameweek, you cannot choose them again. If your chosen team wins their match, you progress to the next Gameweek. If your chosen team loses or draws, you are eliminated.</p>
         </section>
 
         <section id="join">
-            <h2>Join the Competition</h2>
-            <div id="payment-placeholder">[Payment Placeholder]</div>
+            <h2>Join</h2>
+            <p>[payment placeholder]</p>
         </section>
 
         <section id="faq">
             <h2>FAQ</h2>
             <div class="faq-item">
                 <h3>What is Last Man Balling?</h3>
-                <div class="faq-content">Last Man Balling is a weekly soccer competition where you choose a team to win each week. If your team wins, you stay in the game; if they lose or draw, you're out.</div>
+                <div class="faq-answer">Last Man Balling is a soccer competition where you must predict the outcome of matches each week. If your chosen team wins, you progress to the next week. If they lose or draw, you are eliminated.</div>
             </div>
-            <div class="faq-item">
-                <h3>How much does it cost to join?</h3>
-                <div class="faq-content">The entry fee is £10.</div>
-            </div>
-            <div class="faq-item">
-                <h3>How do I pay?</h3>
-                <div class="faq-content">You can pay via the embedded Stripe payment form in the Join section.</div>
-            </div>
-            <div class="faq-item">
-                <h3>When is the deadline to submit my selection?</h3>
-                <div class="faq-content">The deadline is approximately 6PM every Friday before the first game of the week.</div>
-            </div>
-            <div class="faq-item">
-                <h3>How do I submit my selection?</h3>
-                <div class="faq-content">You must submit your weekly selection via [this Google Form]. Please include your name, your PIN, and your prediction for the week.</div>
-            </div>
-            <div class="faq-item">
-                <h3>Can I see which teams I have selected so far?</h3>
-                <div class="faq-content">Yes, all selections so far can be viewed on [this Google Sheets document].</div>
-            </div>
-            <div class="faq-item">
-                <h3>What if my team draws?</h3>
-                <div class="faq-content">You only keep your lives intact if your team wins. If your team loses or draws, you will lose a life.</div>
-            </div>
-            <div class="faq-item">
-                <h3>Can I earn or buy more lives?</h3>
-                <div class="faq-content">No, it is not possible to recover lost lives, or earn more than the three you start with.</div>
-            </div>
-            <div class="faq-item">
-                <h3>What if I do not submit a selection before the deadline?</h3>
-                <div class="faq-content">If you fail to submit a selection before the deadline, you will be assigned the first team that you haven’t already selected, alphabetically.</div>
-            </div>
-            <div class="faq-item">
-                <h3>What if the team I select has their game postponed?</h3>
-                <div class="faq-content">If you select a team from a game that is postponed, you will progress to the next Gameweek without losing a life.</div>
-            </div>
-            <div class="faq-item">
-                <h3>What happens if everyone is eliminated and nobody wins?</h3>
-                <div class="faq-content">If everyone is eliminated without a single Baller remaining, there will be a Ballover. The game will restart, and everyone wishing to play again must pay the £10 entry fee which will be added to the existing Prizepot. All team selections are reset, and the game starts again completely.</div>
-            </div>
-            <div class="faq-item">
-                <h3>If I pick a later kickoff, will I be eliminated later than other Ballers?</h3>
-                <div class="faq-content">No, kickoff times are not taken into account. Whoever loses a life in a Gameweek, loses it all at the same time. You cannot prevent a Ballover by choosing a later kickoff.</div>
-            </div>
-            <div class="faq-item">
-                <h3>Can I play if I am outside of the UK?</h3>
-                <div class="faq-content">Yes, anyone over the age of 18 from anywhere in the world can join.</div>
-            </div>
-            <div class="faq-item">
-                <h3>Can I play if I am under 18?</h3>
-                <div class="faq-content">No. Due to the nature of the Last Man Balling rules, gambling activities regulated under the Gambling Act 2005 are restricted to over 18s.</div>
-            </div>
-            <div class="faq-item">
-                <h3>Can I play if I don’t have social media?</h3>
-                <div class="faq-content">Yes, but all players are encouraged to join the official Last Man Balling WhatsApp group and follow @lastmanballing on Twitter and Instagram to keep up to date with the latest fixtures, selections, eliminations and more.</div>
-            </div>
-            <div class="faq-item">
-                <h3>I missed the chance to sign up before Round 1. Can I still play?</h3>
-                <div class="faq-content">Unfortunately, you cannot join mid-game. However, in the event of a Ballover where no singular winner is declared, you will be able to join. Please sign up to the Waiting List to be notified in the event of a Ballover. As soon as Round 1 starts, it will not be possible to pay the £10 entry fee to join the game.</div>
-            </div>
-            <div class="faq-item">
-                <h3>Can I join multiple times?</h3>
-                <div class="faq-content">No. All Ballers can only join once, and anyone found to be submitting multiple selections will be eliminated from the game and will not receive a refund.</div>
-            </div>
-            <div class="faq-item">
-                <h3>Can I pay in advance for any potential Ballovers?</h3>
-                <div class="faq-content">No, you can only pay £10 for the current game.</div>
-            </div>
+            <!-- Add more FAQ items as needed -->
         </section>
 
         <section id="waitinglist">
             <h2>Waiting List</h2>
-            <p>If you missed the chance to sign up before Round 1, you can join the waiting list to be notified in the event of a Ballover.</p>
-            <div id="waitinglist-form">[Waiting List Form Placeholder]</div>
+            <p>If the current game is full, you can join the waiting list to be notified when a spot becomes available.</p>
         </section>
     </main>
 
     <footer>
-        <a href="https://x.com/LastManBalling"><img src="images/x-icon.png" alt="X Icon"></a>
-        <a href="https://wa.me/lastmanballing"><img src="images/whatsapp-icon.png" alt="WhatsApp Icon"></a>
+        <p>&copy; 2024 Last Man Balling. All rights reserved.</p>
+        <a href="https://x.com/LastManBalling" target="_blank"><img src="images/x-logo.png" alt="X Logo"></a>
+        <a href="https://akr.st/lmbwa" target="_blank"><img src="images/whatsapp-logo.png" alt="WhatsApp Logo"></a>
     </footer>
 
     <script src="assets/js/script.js"></script>
