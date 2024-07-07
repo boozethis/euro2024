@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
 
-    fetch("https://fantasy.premierleague.com/api/bootstrap-static/")
+    fetch("https://fantasy.premierleague.com/api/fixtures/")
         .then(response => response.json())
         .then(data => {
-            const fixtures = data.events;
-            fixtures.forEach(fixture => {
+            data.forEach(fixture => {
                 const fixtureItem = document.createElement("div");
-                fixtureItem.textContent = `Gameweek ${fixture.id}: ${fixture.name} (${new Date(fixture.deadline_time).toLocaleString()})`;
+                fixtureItem.textContent = `${fixture.team_h} vs ${fixture.team_a} (${new Date(fixture.kickoff_time).toLocaleString()})`;
                 fixturesList.appendChild(fixtureItem);
             });
         })
