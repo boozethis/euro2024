@@ -40,10 +40,11 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 5px;
+    margin: 5px;
 }
 
 .nav-item {
@@ -73,9 +74,9 @@ nav ul li {
 }
 
 main {
-    padding-top: 160px;
+    padding-top: 200px;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -104,8 +105,14 @@ section {
     margin: 10px;
     padding: 20px;
     text-align: center;
-    width: 45%;
+    width: 22%; /* Adjusted width to fit 4 boxes in a row */
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .prizepot-item {
+        width: 45%; /* Adjusted width for 2x2 grid on mobile */
+    }
 }
 
 .prizepot-item .icon img {
@@ -165,4 +172,13 @@ footer {
 footer img {
     width: 30px;
     margin: 0 10px;
+}
+
+ul {
+    padding-left: 0; /* Remove padding */
+}
+
+ul li {
+    list-style-type: none; /* Remove bullet points */
+    margin-bottom: 10px; /* Add spacing between list items */
 }
