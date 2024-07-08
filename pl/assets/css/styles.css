@@ -95,6 +95,10 @@ section:target {
     scroll-margin-top: 150px; /* Adjust scroll margin to avoid top cut off */
 }
 
+section#rules {
+    text-align: justify; /* Justify text for the rules section */
+}
+
 .prizepot-info {
     display: flex;
     flex-wrap: wrap;
