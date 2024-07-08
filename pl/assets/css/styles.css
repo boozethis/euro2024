@@ -74,7 +74,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 500px; /* Reduce padding to minimize gap */
+    padding-top: 160px; /* Reduce padding to minimize gap */
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
