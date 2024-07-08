@@ -186,7 +186,13 @@ ul li {
     list-style-type: none; /* Remove bullet points */
     margin-bottom: 10px; /* Add spacing between list items */
 }
-#payment {
-    /* Add any specific styling for the payment section here */
-    border: none; /* Remove the temporary border added for debugging */
+#join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#payment-placeholder {
+    width: 100%;
+    max-width: 400px;
 }
