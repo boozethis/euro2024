@@ -4,56 +4,59 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const bootstrapUrl = corsProxy + encodeURIComponent("https://fantasy.premierleague.com/api/bootstrap-static/");
 
-    fetch(bootstrapUrl)
-        .then(response => {
-            console.log("Fetched bootstrap-static data", response);
-            return response.json();
-        })
-        .then(data => {
-            console.log("Parsed bootstrap-static data", data);
-            let currentGameweekId;
-            for (const event of data.events) {
-                if (event.is_current) {
-                    currentGameweekId = event.id;
-                    break;
-                }
-            }
-            console.log("Current gameweek ID", currentGameweekId);
-            if (currentGameweekId) {
-                const fixturesUrl = corsProxy + encodeURIComponent(`https://fantasy.premierleague.com/api/fixtures/?event=${currentGameweekId}`);
-                fetch(fixturesUrl)
-                    .then(response => {
-                        console.log("Fetched fixtures data", response);
-                        return response.json();
-                    })
-                    .then(fixtures => {
-                        console.log("Parsed fixtures data", fixtures);
-                        fixturesList.innerHTML = ''; // Clear fallback content
-                        fixtures.forEach(fixture => {
-                            const fixtureItem = document.createElement("div");
-                            const homeTeam = data.teams.find(team => team.id === fixture.team_h);
-                            const awayTeam = data.teams.find(team => team.id === fixture.team_a);
-                            if (homeTeam && awayTeam) {
-                                const kickoffTime = new Date(fixture.kickoff_time).toLocaleString();
-                                fixtureItem.textContent = `${homeTeam.name} vs ${awayTeam.name} (${kickoffTime})`;
-                                fixturesList.appendChild(fixtureItem);
-                            } else {
-                                console.warn("Home or away team not found", fixture);
-                            }
-                        });
-                    })
-                    .catch(error => {
-                        console.error("Error fetching fixtures:", error);
-                        fixturesList.innerHTML = '<p>Unable to load fixtures. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
-                    });
-            } else {
-                fixturesList.innerHTML = '<p>No current gameweek found. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
-            }
-        })
-        .catch(error => {
-            console.error("Error fetching bootstrap data:", error);
+    // Use async/await for cleaner asynchronous code
+    async function fetchData(url) {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error('Network response was not ok');
+            return await response.json();
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            return null;
+        }
+    }
+
+    async function loadFixtures() {
+        const data = await fetchData(bootstrapUrl);
+        if (!data) {
             fixturesList.innerHTML = '<p>Unable to load fixtures. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+            return;
+        }
+
+        let currentGameweekId;
+        for (const event of data.events) {
+            if (event.is_current) {
+                currentGameweekId = event.id;
+                break;
+            }
+        }
+
+        if (!currentGameweekId) {
+            fixturesList.innerHTML = '<p>No current gameweek found. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+            return;
+        }
+
+        const fixturesUrl = corsProxy + encodeURIComponent(`https://fantasy.premierleague.com/api/fixtures/?event=${currentGameweekId}`);
+        const fixtures = await fetchData(fixturesUrl);
+        if (!fixtures) {
+            fixturesList.innerHTML = '<p>Unable to load fixtures. If you are unable to see the fixtures, please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+            return;
+        }
+
+        fixturesList.innerHTML = ''; // Clear fallback content
+        fixtures.forEach(fixture => {
+            const fixtureItem = document.createElement("div");
+            const homeTeam = data.teams.find(team => team.id === fixture.team_h);
+            const awayTeam = data.teams.find(team => team.id === fixture.team_a);
+            if (homeTeam && awayTeam) {
+                const kickoffTime = new Date(fixture.kickoff_time).toLocaleString();
+                fixtureItem.textContent = `${homeTeam.name} vs ${awayTeam.name} (${kickoffTime})`;
+                fixturesList.appendChild(fixtureItem);
+            }
         });
+    }
+
+    loadFixtures();
 
     // Countdown timer
     const countdownTimer = document.getElementById("countdown-timer");
@@ -94,20 +97,4 @@ document.addEventListener("DOMContentLoaded", function() {
             item.classList.add("nav-item-active");
         });
     });
-
-    // Stripe Button Check
-    const paymentPlaceholder = document.getElementById("payment-placeholder");
-    if (paymentPlaceholder) {
-        const stripeButtonScript = document.createElement("script");
-        stripeButtonScript.src = "https://js.stripe.com/v3/buy-button.js";
-        stripeButtonScript.async = true;
-        stripeButtonScript.onload = () => {
-            const stripeBuyButton = document.createElement("stripe-buy-button");
-            stripeBuyButton.setAttribute("buy-button-id", "buy_btn_1MlfFcFqQhAnLWYKCKN36tJz");
-            stripeBuyButton.setAttribute("publishable-key", "pk_live_tfBhRFqfPZAUYPDiPLwwCeTY");
-            paymentPlaceholder.innerHTML = "";
-            paymentPlaceholder.appendChild(stripeBuyButton);
-        };
-        document.body.appendChild(stripeButtonScript);
-    }
 });
