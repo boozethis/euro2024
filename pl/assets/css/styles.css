@@ -88,6 +88,7 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text and content within sections */
 }
 
 section:target {
@@ -186,6 +187,14 @@ ul {
 ul li {
     list-style-type: none; /* Remove bullet points */
     margin-bottom: 10px; /* Add spacing between list items */
+}
+
+#payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
 }
 
 #waitinglist-form iframe {
