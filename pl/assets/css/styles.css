@@ -74,7 +74,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 200px; /* Adjusted padding */
+    padding-top: 300px; /* Adjusted padding */
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -90,7 +90,7 @@ section {
 }
 
 section:target {
-    scroll-margin-top: 220px; /* Adjust scroll margin */
+    scroll-margin-top: 300px; /* Adjust scroll margin */
 }
 
 .prizepot-info {
