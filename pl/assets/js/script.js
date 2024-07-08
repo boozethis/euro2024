@@ -82,3 +82,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM fully loaded and parsed");
+
+    // Existing code...
+
+    // Stripe Button Check
+    console.log("Stripe script should load below this line:");
+    const stripeScript = document.querySelector('script[src="https://js.stripe.com/v3/buy-button.js"]');
+    console.log(stripeScript ? "Stripe script loaded successfully." : "Stripe script failed to load.");
+});
