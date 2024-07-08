@@ -74,7 +74,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 250px; /* Increased padding to avoid top cut off */
+    padding-top: 400px; /* Increased padding to avoid top cut off */
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
