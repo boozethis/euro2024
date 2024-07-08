@@ -74,7 +74,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 300px; /* Increased padding to avoid top cut off */
+    padding-top: 300px; /* Adjust padding to avoid top cut off */
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -186,13 +186,15 @@ ul li {
     list-style-type: none; /* Remove bullet points */
     margin-bottom: 10px; /* Add spacing between list items */
 }
+
+/* Centering payment section */
 #join {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#payment-placeholder {
+#payment-section {
     width: 100%;
     max-width: 400px;
 }
