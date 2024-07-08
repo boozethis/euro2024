@@ -74,7 +74,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 160px; /* Adjusted padding */
+    padding-top: 120px; /* Further reduced padding */
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
