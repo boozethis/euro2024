@@ -1,3 +1,4 @@
+/* Inline critical CSS */
 body {
     font-family: 'Google Sans', sans-serif;
     background-color: #37003C;
@@ -187,17 +188,8 @@ ul li {
     margin-bottom: 10px; /* Add spacing between list items */
 }
 
-/* Center the payment section */
-#payment {
-    display: flex;
-    justify-content: center;
-}
-
 #waitinglist-form iframe {
     width: 100%;
-    height: 800px; /* Adjust height as needed */
-    max-width: 100%;
+    height: 800px;
     border: none;
-    margin: 0;
-    padding: 0;
 }
