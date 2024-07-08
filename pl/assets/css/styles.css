@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans&display=swap');
-
 body {
     font-family: 'Google Sans', sans-serif;
     background-color: #37003C;
@@ -9,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 header {
@@ -24,6 +22,7 @@ header {
 
 header .logo {
     width: 150px;
+    height: auto;
     animation: logo-animation 1s ease-in-out;
 }
 
@@ -77,7 +76,7 @@ nav ul li {
 }
 
 main {
-    padding-top: 300px; /* Increased padding to avoid top cut off */
+    padding-top: 300px;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -90,26 +89,18 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-section#rules ul {
-    text-align: justify;
-}
-
-.faq-item .faq-content {
-    text-align: justify;
+    text-align: left;
 }
 
 section:target {
-    scroll-margin-top: 150px; /* Adjust scroll margin to avoid top cut off */
+    scroll-margin-top: 150px;
 }
 
 .prizepot-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px; /* Add gap between boxes */
+    gap: 10px;
 }
 
 .prizepot-item {
@@ -121,18 +112,18 @@ section:target {
     color: #fff;
     padding: 20px;
     text-align: center;
-    flex: 1 1 calc(25% - 20px); /* Flex basis to fit 4 items across */
+    flex: 1 1 calc(25% - 20px);
     box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
     .prizepot-item {
-        flex: 1 1 calc(50% - 20px); /* Flex basis for 2x2 grid on mobile */
+        flex: 1 1 calc(50% - 20px);
     }
 }
 
 .prizepot-item .icon img {
-    width: 40px; /* Adjust the size of the icons here */
+    width: 40px;
     height: auto;
     margin-bottom: 10px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
@@ -164,20 +155,51 @@ section:target {
     cursor: pointer;
 }
 
-.payment-section {
-    display: flex;
-    justify-content: center;
-}
-
-.payment-section > div {
+.faq-item h3 {
+    background-color: #00FF87;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
     text-align: center;
 }
 
+.faq-content {
+    display: none;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #37003C;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+}
+
 ul {
-    padding-left: 0; /* Remove padding */
+    padding-left: 0;
 }
 
 ul li {
-    list-style-type: none; /* Remove bullet points */
-    margin-bottom: 10px; /* Add spacing between list items */
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#rules ul {
+    text-align: justify;
+}
+
+/* Center the payment embed */
+#payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
