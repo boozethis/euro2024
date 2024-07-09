@@ -163,6 +163,10 @@ section:target {
     text-align: justify;
 }
 
+.hidden {
+    display: none;
+}
+
 footer {
     background-color: #37003C;
     padding: 10px;
