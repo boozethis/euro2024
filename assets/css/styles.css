@@ -195,6 +195,14 @@ ul li {
 .justify-text {
     text-align: justify;
 }
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Center the payment embed */
 #payment {
     display: flex;
