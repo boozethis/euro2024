@@ -86,7 +86,14 @@ document.addEventListener("DOMContentLoaded", function() {
     faqItems.forEach(item => {
         item.addEventListener("click", () => {
             const answer = item.nextElementSibling;
-            answer.style.display = answer.style.display === "block" ? "none" : "block";
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                document.querySelectorAll(".faq-content").forEach(content => {
+                    content.style.display = "none";
+                });
+                answer.style.display = "block";
+            }
         });
     });
 
