@@ -192,6 +192,9 @@ ul li {
     text-align: justify;
 }
 
+.justify-text {
+    text-align: justify;
+}
 /* Center the payment embed */
 #payment {
     display: flex;
