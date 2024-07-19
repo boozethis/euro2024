@@ -10,10 +10,15 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch(bootstrapUrl)
         .then(response => response.json())
         .then(data => {
-            let currentGameweekId = data.events.find(event => event.is_current)?.id;
+            const events = data.events;
+            let currentGameweekId = events.find(event => event.is_current)?.id;
+
+            if (!currentGameweekId) {
+                currentGameweekId = events.find(event => event.is_next)?.id;
+            }
 
             if (currentGameweekId) {
-                const nextGameweekId = currentGameweekId + 1;
+                const nextGameweekId = currentGameweekId;
 
                 // Fetch fixtures for the next gameweek
                 fetch(fixturesUrl)
