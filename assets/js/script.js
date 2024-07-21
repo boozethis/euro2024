@@ -4,11 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const countdownTimer = document.getElementById("countdown-timer");
     const fixturesUrl = "assets/js/fixtures.json"; // Update the path to the JSON file
 
-    // Verify that elements exist
-    console.log("fixturesList:", fixturesList);
-    console.log("fixturesHeader:", fixturesHeader);
-    console.log("countdownTimer:", countdownTimer);
-
     // Fetch fixtures data from the JSON file
     fetch(fixturesUrl)
         .then(response => response.json())
@@ -26,12 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
             if (currentGameweek) {
                 // Update the header with the current gameweek number
                 fixturesHeader.textContent = `Gameweek ${currentGameweek.gameweek} Fixtures`;
-
-                // Calculate the start of the week (Monday) after the previous deadline
-                const previousGameweekIndex = gameweeks.indexOf(currentGameweek) - 1;
-                const previousGameweek = gameweeks[previousGameweekIndex];
-                const startDate = previousGameweek ? new Date(previousGameweek.deadline) : new Date();
-                startDate.setDate(startDate.getDate() - startDate.getDay() + 1); // Set to Monday
 
                 // Display the fixtures for the current gameweek
                 fixturesList.innerHTML = '';
