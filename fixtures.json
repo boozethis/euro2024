@@ -629,23 +629,21 @@
             {"home": "West Ham", "away": "Nottm Forest"}
           ]
         },
-        {
-          "gameweek": 38,
-          "start_date": "2025-05-20",
-          "end_date": "2025-05-26",
-          "fixtures": [
-            {"home": "Bournemouth", "away": "Leicester"},
-            {"home": "Fulham", "away": "Man City"},
-            {"home": "Ipswich", "away": "West Ham"},
-            {"home": "Liverpool", "away": "Crystal Palace"},
-            {"home": "Man Utd", "away": "Aston Villa"},
-            {"home": "Newcastle", "away": "Everton"},
-            {"home": "Nottm Forest", "away": "Chelsea"},
-            {"home": "Southampton", "away": "Arsenal"},
-            {"home": "Spurs", "away": "Brighton"},
-            {"home": "Wolves", "away": "Brentford"}
-          ]
-        }
+    {
+      "gameweek": 38,
+      "start_date": "2025-05-20",
+      "end_date": "2025-05-26",
+      "fixtures": [
+        {"home": "Bournemouth", "away": "Leicester"},
+        {"home": "Fulham", "away": "Man City"},
+        {"home": "Ipswich", "away": "West Ham"},
+        {"home": "Liverpool", "away": "Crystal Palace"},
+        {"home": "Man Utd", "away": "Aston Villa"},
+        {"home": "Newcastle", "away": "Everton"},
+        {"home": "Nottm Forest", "away": "Chelsea"},
+        {"home": "Southampton", "away": "Arsenal"},
+        {"home": "Spurs", "away": "Brighton"},
+        {"home": "Wolves", "away": "Brentford"}
       ]
     }
   ]
