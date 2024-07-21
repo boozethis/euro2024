@@ -161,6 +161,14 @@ section:target {
     background: linear-gradient(to right, #8A2BE2, #4B0082);
 }
 
+.prizepot-leader {
+    background: linear-gradient(to right, #00FF87, #02EFFE);
+}
+
+.prizepot-remaining {
+    background: linear-gradient(to right, #ff4b5c, #ff0040);
+}
+
 #countdown-timer {
     font-size: 2em;
     text-align: center;
