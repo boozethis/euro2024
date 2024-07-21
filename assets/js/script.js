@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
     const countdownTimer = document.getElementById("countdown-timer");
-    const fixturesUrl = "/fixtures.json";
+    const fixturesUrl = "./fixtures.json"; // Relative path to fixtures.json
 
     fetch(fixturesUrl)
         .then(response => response.json())
