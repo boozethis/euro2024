@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
     const countdownTimer = document.getElementById("countdown-timer");
-    const corsApiKey = "temp_98fbcf88a1b85cbe295496079a8cb807"; // Temporary API key
-    const proxyUrl = `https://cors.sh/`;
+    const proxyUrl = "https://api.allorigins.win/get?url=";
 
-    const bootstrapUrl = `${proxyUrl}https://fantasy.premierleague.com/api/bootstrap-static/?key=${corsApiKey}`;
-    const fixturesUrl = `${proxyUrl}https://fantasy.premierleague.com/api/fixtures/?key=${corsApiKey}`;
+    const bootstrapUrl = `${proxyUrl}${encodeURIComponent("https://fantasy.premierleague.com/api/bootstrap-static/")}`;
+    const fixturesUrl = `${proxyUrl}${encodeURIComponent("https://fantasy.premierleague.com/api/fixtures/")}`;
 
     // Fetch current gameweek data
     fetch(bootstrapUrl)
         .then(response => response.json())
+        .then(data => JSON.parse(data.contents))
         .then(data => {
             const events = data.events;
             const teams = data.teams.reduce((map, team) => {
@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Fetch fixtures for the current gameweek
                 fetch(fixturesUrl)
                     .then(response => response.json())
+                    .then(data => JSON.parse(data.contents))
                     .then(fixtures => {
                         const currentGameweekFixtures = fixtures.filter(fixture => fixture.event === currentGameweekId);
 
