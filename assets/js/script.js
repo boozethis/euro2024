@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
     const countdownTimer = document.getElementById("countdown-timer");
     const corsApiKey = "temp_98fbcf88a1b85cbe295496079a8cb807"; // Temporary API key
-    const proxyUrl = `https://api.cors.sh/`;
+    const proxyUrl = `https://cors.sh/`;
 
     const bootstrapUrl = `${proxyUrl}https://fantasy.premierleague.com/api/bootstrap-static/?key=${corsApiKey}`;
     const fixturesUrl = `${proxyUrl}https://fantasy.premierleague.com/api/fixtures/?key=${corsApiKey}`;
