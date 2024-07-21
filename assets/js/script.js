@@ -1,16 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
     const countdownTimer = document.getElementById("countdown-timer");
-    const corsProxy = "https://corsproxy.io/?"; // Public CORS proxy
 
-    const bootstrapUrl = corsProxy + encodeURIComponent("https://fantasy.premierleague.com/api/bootstrap-static/");
-    const fixturesUrl = corsProxy + encodeURIComponent("https://fantasy.premierleague.com/api/fixtures/");
+    const bootstrapUrl = "https://fantasy.premierleague.com/api/bootstrap-static/";
+    const fixturesUrl = "https://fantasy.premierleague.com/api/fixtures/";
 
     // Fetch current gameweek data
     fetch(bootstrapUrl)
         .then(response => response.json())
         .then(data => {
             const events = data.events;
+            const teams = data.teams.reduce((map, team) => {
+                map[team.id] = team.name;
+                return map;
+            }, {});
+
             let currentGameweekId = events.find(event => event.is_current)?.id;
 
             // Handle season transition: if no current gameweek, find the first gameweek of the new season
@@ -49,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                 fixturesList.innerHTML = '';
                                 currentGameweekFixtures.forEach(fixture => {
                                     const fixtureItem = document.createElement("div");
-                                    const homeTeam = data.teams.find(team => team.id === fixture.team_h);
-                                    const awayTeam = data.teams.find(team => team.id === fixture.team_a);
+                                    const homeTeam = teams[fixture.team_h];
+                                    const awayTeam = teams[fixture.team_a];
                                     if (homeTeam && awayTeam) {
                                         const fixtureKickoffTime = new Date(fixture.kickoff_time).toLocaleString();
-                                        fixtureItem.textContent = `${homeTeam.name} vs ${awayTeam.name} (${fixtureKickoffTime})`;
+                                        fixtureItem.textContent = `${homeTeam} vs ${awayTeam} (${fixtureKickoffTime})`;
                                         fixturesList.appendChild(fixtureItem);
                                     }
                                 });
