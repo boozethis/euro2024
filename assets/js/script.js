@@ -2,25 +2,29 @@ document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
     const fixturesHeader = document.getElementById("fixtures-header");
     const countdownTimer = document.getElementById("countdown-timer");
+    const countdownHeading = document.getElementById("countdown-heading");
     const fixturesUrl = "assets/js/fixtures.json"; // Update the path to the JSON file
 
     // Fetch fixtures data from the JSON file
     fetch(fixturesUrl)
         .then(response => response.json())
         .then(data => {
-            console.log("Data fetched:", data);
             const gameweeks = data;
             const currentDate = new Date();
 
             // Find the current gameweek based on the date
             const currentGameweek = gameweeks.find(gameweek => {
-                const deadline = new Date(gameweek.deadline);
-                return currentDate <= deadline;
+                const startDate = new Date(gameweek.start_date);
+                const endDate = new Date(gameweek.end_date);
+                return currentDate >= startDate && currentDate <= endDate;
             });
 
             if (currentGameweek) {
                 // Update the header with the current gameweek number
                 fixturesHeader.textContent = `Gameweek ${currentGameweek.gameweek} Fixtures`;
+
+                // Update the countdown heading
+                countdownHeading.textContent = `Countdown to GW${currentGameweek.gameweek} Deadline`;
 
                 // Display the fixtures for the current gameweek
                 fixturesList.innerHTML = '';
@@ -61,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
         updateCountdown(); // Initial call to set the countdown immediately
         setInterval(updateCountdown, 1000); // Update every second
     }
+});
 
     // FAQ toggle
     const faqItems = document.querySelectorAll(".faq-item h3");
@@ -86,4 +91,3 @@ document.addEventListener("DOMContentLoaded", function() {
             item.classList.add("nav-item-active");
         });
     });
-});
