@@ -18,19 +18,17 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             if (currentGameweekId) {
-                const nextGameweekId = currentGameweekId;
-
-                // Fetch fixtures for the next gameweek
+                // Fetch fixtures for the current gameweek
                 fetch(fixturesUrl)
                     .then(response => response.json())
                     .then(fixtures => {
-                        const nextGameweekFixtures = fixtures.filter(fixture => fixture.event === nextGameweekId);
+                        const currentGameweekFixtures = fixtures.filter(fixture => fixture.event === currentGameweekId);
 
                         // Sort fixtures by kickoff time to get the earliest one
-                        nextGameweekFixtures.sort((a, b) => new Date(a.kickoff_time) - new Date(b.kickoff_time));
+                        currentGameweekFixtures.sort((a, b) => new Date(a.kickoff_time) - new Date(b.kickoff_time));
 
-                        if (nextGameweekFixtures.length > 0) {
-                            const firstFixture = nextGameweekFixtures[0];
+                        if (currentGameweekFixtures.length > 0) {
+                            const firstFixture = currentGameweekFixtures[0];
                             const kickoffTime = new Date(firstFixture.kickoff_time);
 
                             // Set countdown timer
@@ -38,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                             // Display fixtures
                             fixturesList.innerHTML = '';
-                            nextGameweekFixtures.forEach(fixture => {
+                            currentGameweekFixtures.forEach(fixture => {
                                 const fixtureItem = document.createElement("div");
                                 const homeTeam = data.teams.find(team => team.id === fixture.team_h);
                                 const awayTeam = data.teams.find(team => team.id === fixture.team_a);
@@ -49,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 }
                             });
                         } else {
-                            fixturesList.innerHTML = '<p>No fixtures found for the next gameweek. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+                            fixturesList.innerHTML = '<p>No fixtures found for the current gameweek. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
                         }
                     })
                     .catch(error => {
@@ -75,9 +73,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            countdownTimer.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-            if (distance < 0) {
+            if (distance >= 0) {
+                countdownTimer.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            } else {
                 countdownTimer.textContent = "EXPIRED";
             }
         }
