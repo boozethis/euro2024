@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const events = data.events;
             let currentGameweekId = events.find(event => event.is_current)?.id;
 
-            if (!currentGameweekId) {
-                currentGameweekId = events.find(event => event.is_next)?.id;
+            // Handle season transition: if no current gameweek, find the first gameweek of the new season
+            if (!currentGameweekId || currentGameweekId === 38) {
+                currentGameweekId = events.find(event => event.is_next)?.id || 1;
             }
 
             console.log("Current Gameweek ID:", currentGameweekId); // Debugging: Log the current gameweek ID
@@ -26,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     .then(fixtures => {
                         const currentGameweekFixtures = fixtures.filter(fixture => fixture.event === currentGameweekId);
 
-                        // Ensure we have the correct season fixtures by checking if the gameweek matches the expected season start
+                        // Sort fixtures by kickoff time to get the earliest one
+                        currentGameweekFixtures.sort((a, b) => new Date(a.kickoff_time) - new Date(b.kickoff_time));
+
                         if (currentGameweekFixtures.length > 0) {
                             const firstFixture = currentGameweekFixtures[0];
                             const kickoffTime = new Date(firstFixture.kickoff_time);
