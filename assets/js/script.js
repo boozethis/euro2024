@@ -27,33 +27,41 @@ document.addEventListener("DOMContentLoaded", function() {
                     .then(fixtures => {
                         const currentGameweekFixtures = fixtures.filter(fixture => fixture.event === currentGameweekId);
 
-                        // Sort fixtures by kickoff time to get the earliest one
-                        currentGameweekFixtures.sort((a, b) => new Date(a.kickoff_time) - new Date(b.kickoff_time));
+                        // Verify the season year to ensure we have the correct season fixtures
+                        const currentYear = new Date().getFullYear();
+                        const firstFixtureYear = new Date(currentGameweekFixtures[0]?.kickoff_time).getFullYear();
 
-                        if (currentGameweekFixtures.length > 0) {
-                            const firstFixture = currentGameweekFixtures[0];
-                            const kickoffTime = new Date(firstFixture.kickoff_time);
+                        if (firstFixtureYear === currentYear) {
+                            // Sort fixtures by kickoff time to get the earliest one
+                            currentGameweekFixtures.sort((a, b) => new Date(a.kickoff_time) - new Date(b.kickoff_time));
 
-                            // Debugging: Log the kickoff time
-                            console.log("First fixture kickoff time:", kickoffTime);
+                            if (currentGameweekFixtures.length > 0) {
+                                const firstFixture = currentGameweekFixtures[0];
+                                const kickoffTime = new Date(firstFixture.kickoff_time);
 
-                            // Set countdown timer
-                            setCountdown(kickoffTime);
+                                // Debugging: Log the kickoff time
+                                console.log("First fixture kickoff time:", kickoffTime);
 
-                            // Display fixtures
-                            fixturesList.innerHTML = '';
-                            currentGameweekFixtures.forEach(fixture => {
-                                const fixtureItem = document.createElement("div");
-                                const homeTeam = data.teams.find(team => team.id === fixture.team_h);
-                                const awayTeam = data.teams.find(team => team.id === fixture.team_a);
-                                if (homeTeam && awayTeam) {
-                                    const fixtureKickoffTime = new Date(fixture.kickoff_time).toLocaleString();
-                                    fixtureItem.textContent = `${homeTeam.name} vs ${awayTeam.name} (${fixtureKickoffTime})`;
-                                    fixturesList.appendChild(fixtureItem);
-                                }
-                            });
+                                // Set countdown timer
+                                setCountdown(kickoffTime);
+
+                                // Display fixtures
+                                fixturesList.innerHTML = '';
+                                currentGameweekFixtures.forEach(fixture => {
+                                    const fixtureItem = document.createElement("div");
+                                    const homeTeam = data.teams.find(team => team.id === fixture.team_h);
+                                    const awayTeam = data.teams.find(team => team.id === fixture.team_a);
+                                    if (homeTeam && awayTeam) {
+                                        const fixtureKickoffTime = new Date(fixture.kickoff_time).toLocaleString();
+                                        fixtureItem.textContent = `${homeTeam.name} vs ${awayTeam.name} (${fixtureKickoffTime})`;
+                                        fixturesList.appendChild(fixtureItem);
+                                    }
+                                });
+                            } else {
+                                fixturesList.innerHTML = '<p>No fixtures found for the current gameweek. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+                            }
                         } else {
-                            fixturesList.innerHTML = '<p>No fixtures found for the current gameweek. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+                            fixturesList.innerHTML = '<p>The fixtures data appears to be from the previous season. Please check back later for the updated fixtures.</p>';
                         }
                     })
                     .catch(error => {
