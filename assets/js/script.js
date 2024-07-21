@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
                             const firstFixture = currentGameweekFixtures[0];
                             const kickoffTime = new Date(firstFixture.kickoff_time);
 
+                            // Debugging: Log the kickoff time
+                            console.log("First fixture kickoff time:", kickoffTime);
+
                             // Set countdown timer
                             setCountdown(kickoffTime);
 
