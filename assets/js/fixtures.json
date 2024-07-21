@@ -644,9 +644,8 @@
             {"home": "Southampton", "away": "Arsenal"},
             {"home": "Spurs", "away": "Brighton"},
             {"home": "Wolves", "away": "Brentford"}
-          ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
