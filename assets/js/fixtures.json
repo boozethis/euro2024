@@ -14,7 +14,7 @@
       {"home_team": "Wolves", "away_team": "Bournemouth"},
       {"home_team": "Leicester", "away_team": "Brentford"},
       {"home_team": "Man City", "away_team": "Newcastle"},
-      {"home_team": "Nott'm Forest", "away_team": "Ipswich"}
+      {"home_team": "Nottm Forest", "away_team": "Ipswich"}
     ]
   },
   {
@@ -30,7 +30,7 @@
       {"home_team": "Everton", "away_team": "Southampton"},
       {"home_team": "Fulham", "away_team": "Leicester"},
       {"home_team": "Newcastle", "away_team": "Wolves"},
-      {"home_team": "Nott'm Forest", "away_team": "West Ham"},
+      {"home_team": "Nottm Forest", "away_team": "West Ham"},
       {"home_team": "Spurs", "away_team": "Ipswich"},
       {"home_team": "Liverpool", "away_team": "Bournemouth"}
     ]
@@ -48,7 +48,7 @@
       {"home_team": "Ipswich", "away_team": "Fulham"},
       {"home_team": "Leicester", "away_team": "Spurs"},
       {"home_team": "Man City", "away_team": "Southampton"},
-      {"home_team": "Man Utd", "away_team": "Nott'm Forest"},
+      {"home_team": "Man Utd", "away_team": "Nottm Forest"},
       {"home_team": "West Ham", "away_team": "Brighton"},
       {"home_team": "Wolves", "away_team": "Bournemouth"}
     ]
@@ -66,7 +66,7 @@
       {"home_team": "Everton", "away_team": "Brentford"},
       {"home_team": "Leicester", "away_team": "West Ham"},
       {"home_team": "Man City", "away_team": "Newcastle"},
-      {"home_team": "Nott'm Forest", "away_team": "Southampton"},
+      {"home_team": "Nottm Forest", "away_team": "Southampton"},
       {"home_team": "Spurs", "away_team": "Ipswich"},
       {"home_team": "Crystal Palace", "away_team": "Liverpool"}
     ]
@@ -86,7 +86,7 @@
       {"home_team": "Newcastle", "away_team": "Everton"},
       {"home_team": "Southampton", "away_team": "Crystal Palace"},
       {"home_team": "West Ham", "away_team": "Ipswich"},
-      {"home_team": "Wolves", "away_team": "Nott'm Forest"}
+      {"home_team": "Wolves", "away_team": "Nottm Forest"}
     ]
   },
   {
@@ -102,7 +102,7 @@
       {"home_team": "Crystal Palace", "away_team": "Spurs"},
       {"home_team": "Everton", "away_team": "Newcastle"},
       {"home_team": "Man Utd", "away_team": "Man City"},
-      {"home_team": "Nott'm Forest", "away_team": "Liverpool"},
+      {"home_team": "Nottm Forest", "away_team": "Liverpool"},
       {"home_team": "Ipswich", "away_team": "West Ham"},
       {"home_team": "Wolves", "away_team": "Leicester"}
     ]
@@ -120,7 +120,7 @@
       {"home_team": "Man Utd", "away_team": "Crystal Palace"},
       {"home_team": "Newcastle", "away_team": "Southampton"},
       {"home_team": "Spurs", "away_team": "Everton"},
-      {"home_team": "West Ham", "away_team": "Nott'm Forest"},
+      {"home_team": "West Ham", "away_team": "Nottm Forest"},
       {"home_team": "Leicester", "away_team": "Bournemouth"},
       {"home_team": "Brighton", "away_team": "Brentford"}
     ]
@@ -139,7 +139,7 @@
       {"home_team": "Everton", "away_team": "Man City"},
       {"home_team": "Ipswich", "away_team": "Brentford"},
       {"home_team": "Southampton", "away_team": "Fulham"},
-      {"home_team": "Nott'm Forest", "away_team": "Chelsea"},
+      {"home_team": "Nottm Forest", "away_team": "Chelsea"},
       {"home_team": "Wolves", "away_team": "Newcastle"}
     ]
   },
@@ -158,7 +158,7 @@
       {"home_team": "Newcastle", "away_team": "Bournemouth"},
       {"home_team": "Spurs", "away_team": "Man City"},
       {"home_team": "West Ham", "away_team": "Wolves"},
-      {"home_team": "Nott'm Forest", "away_team": "Ipswich"}
+      {"home_team": "Nottm Forest", "away_team": "Ipswich"}
     ]
   },
   {
@@ -174,7 +174,7 @@
       {"home_team": "Fulham", "away_team": "Aston Villa"},
       {"home_team": "Ipswich", "away_team": "Spurs"},
       {"home_team": "Man City", "away_team": "Crystal Palace"},
-      {"home_team": "Nott'm Forest", "away_team": "Wolves"},
+      {"home_team": "Nottm Forest", "away_team": "Wolves"},
       {"home_team": "Southampton", "away_team": "West Ham"},
       {"home_team": "Leicester", "away_team": "Bournemouth"}
     ]
@@ -189,7 +189,7 @@
       {"home_team": "Aston Villa", "away_team": "Brighton"},
       {"home_team": "Brentford", "away_team": "Man City"},
       {"home_team": "Crystal Palace", "away_team": "Chelsea"},
-      {"home_team": "Everton", "away_team": "Nott'm Forest"},
+      {"home_team": "Everton", "away_team": "Nottm Forest"},
       {"home_team": "Liverpool", "away_team": "Leicester"},
       {"home_team": "Man Utd", "away_team": "Fulham"},
       {"home_team": "Newcastle", "away_team": "Spurs"},
@@ -205,7 +205,7 @@
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "West Ham"},
       {"home_team": "Bournemouth", "away_team": "Fulham"},
-      {"home_team": "Brighton", "away_team": "Nott'm Forest"},
+      {"home_team": "Brighton", "away_team": "Nottm Forest"},
       {"home_team": "Chelsea", "away_team": "Man City"},
       {"home_team": "Crystal Palace", "away_team": "Newcastle"},
       {"home_team": "Ipswich", "away_team": "Man Utd"},
@@ -229,7 +229,7 @@
       {"home_team": "Man City", "away_team": "Everton"},
       {"home_team": "Man Utd", "away_team": "Spurs"},
       {"home_team": "Newcastle", "away_team": "West Ham"},
-      {"home_team": "Nott'm Forest", "away_team": "Crystal Palace"},
+      {"home_team": "Nottm Forest", "away_team": "Crystal Palace"},
       {"home_team": "Leicester", "away_team": "Wolves"}
     ]
   },
@@ -246,7 +246,7 @@
       {"home_team": "Fulham", "away_team": "Brighton"},
       {"home_team": "Ipswich", "away_team": "Crystal Palace"},
       {"home_team": "Leicester", "away_team": "West Ham"},
-      {"home_team": "Man City", "away_team": "Nott'm Forest"},
+      {"home_team": "Man City", "away_team": "Nottm Forest"},
       {"home_team": "Newcastle", "away_team": "Liverpool"},
       {"home_team": "Southampton", "away_team": "Chelsea"}
     ]
@@ -264,7 +264,7 @@
       {"home_team": "Fulham", "away_team": "Arsenal"},
       {"home_team": "Ipswich", "away_team": "Bournemouth"},
       {"home_team": "Leicester", "away_team": "Brighton"},
-      {"home_team": "Man Utd", "away_team": "Nott'm Forest"},
+      {"home_team": "Man Utd", "away_team": "Nottm Forest"},
       {"home_team": "Spurs", "away_team": "Chelsea"},
       {"home_team": "West Ham", "away_team": "Wolves"}
     ]
@@ -282,7 +282,7 @@
       {"home_team": "Liverpool", "away_team": "Fulham"},
       {"home_team": "Man City", "away_team": "Man Utd"},
       {"home_team": "Newcastle", "away_team": "Leicester"},
-      {"home_team": "Nott'm Forest", "away_team": "Aston Villa"},
+      {"home_team": "Nottm Forest", "away_team": "Aston Villa"},
       {"home_team": "Southampton", "away_team": "Spurs"},
       {"home_team": "Wolves", "away_team": "Ipswich"}
     ]
@@ -294,7 +294,7 @@
     "deadline": "2024-12-21T13:30:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "Man City"},
-      {"home_team": "Brentford", "away_team": "Nott'm Forest"},
+      {"home_team": "Brentford", "away_team": "Nottm Forest"},
       {"home_team": "Crystal Palace", "away_team": "Arsenal"},
       {"home_team": "Everton", "away_team": "Chelsea"},
       {"home_team": "Fulham", "away_team": "Southampton"},
@@ -318,7 +318,7 @@
       {"home_team": "Liverpool", "away_team": "Leicester"},
       {"home_team": "Man City", "away_team": "Everton"},
       {"home_team": "Newcastle", "away_team": "Aston Villa"},
-      {"home_team": "Nott'm Forest", "away_team": "Spurs"},
+      {"home_team": "Nottm Forest", "away_team": "Spurs"},
       {"home_team": "Southampton", "away_team": "West Ham"},
       {"home_team": "Wolves", "away_team": "Man Utd"}
     ]
@@ -332,7 +332,7 @@
       {"home_team": "Aston Villa", "away_team": "Brighton"},
       {"home_team": "Brentford", "away_team": "Arsenal"},
       {"home_team": "Crystal Palace", "away_team": "Southampton"},
-      {"home_team": "Everton", "away_team": "Nott'm Forest"},
+      {"home_team": "Everton", "away_team": "Nottm Forest"},
       {"home_team": "Fulham", "away_team": "Bournemouth"},
       {"home_team": "Ipswich", "away_team": "Chelsea"},
       {"home_team": "Leicester", "away_team": "Man City"},
@@ -356,7 +356,7 @@
       {"home_team": "Man City", "away_team": "West Ham"},
       {"home_team": "Southampton", "away_team": "Brentford"},
       {"home_team": "Spurs", "away_team": "Newcastle"},
-      {"home_team": "Wolves", "away_team": "Nott'm Forest"}
+      {"home_team": "Wolves", "away_team": "Nottm Forest"}
     ]
   },
   {
@@ -370,7 +370,7 @@
       {"home_team": "Everton", "away_team": "Aston Villa"},
       {"home_team": "Ipswich", "away_team": "Brighton"},
       {"home_team": "Leicester", "away_team": "Crystal Palace"},
-      {"home_team": "Nott'm Forest", "away_team": "Liverpool"},
+      {"home_team": "Nottm Forest", "away_team": "Liverpool"},
       {"home_team": "West Ham", "away_team": "Fulham"},
       {"home_team": "Chelsea", "away_team": "Bournemouth"},
       {"home_team": "Newcastle", "away_team": "Wolves"},
@@ -391,7 +391,7 @@
       {"home_team": "Leicester", "away_team": "Fulham"},
       {"home_team": "Man Utd", "away_team": "Brighton"},
       {"home_team": "Newcastle", "away_team": "Bournemouth"},
-      {"home_team": "Nott'm Forest", "away_team": "Southampton"},
+      {"home_team": "Nottm Forest", "away_team": "Southampton"},
       {"home_team": "West Ham", "away_team": "Crystal Palace"}
     ]
   },
@@ -402,7 +402,7 @@
     "deadline": "2025-01-25T13:30:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "West Ham"},
-      {"home_team": "Bournemouth", "away_team": "Nott'm Forest"},
+      {"home_team": "Bournemouth", "away_team": "Nottm Forest"},
       {"home_team": "Brighton", "away_team": "Everton"},
       {"home_team": "Crystal Palace", "away_team": "Brentford"},
       {"home_team": "Fulham", "away_team": "Man Utd"},
@@ -427,7 +427,7 @@
       {"home_team": "Ipswich", "away_team": "Southampton"},
       {"home_team": "Man Utd", "away_team": "Crystal Palace"},
       {"home_team": "Newcastle", "away_team": "Fulham"},
-      {"home_team": "Nott'm Forest", "away_team": "Brighton"},
+      {"home_team": "Nottm Forest", "away_team": "Brighton"},
       {"home_team": "Wolves", "away_team": "Aston Villa"}
     ]
   },
@@ -440,7 +440,7 @@
       {"home_team": "Aston Villa", "away_team": "Ipswich"},
       {"home_team": "Brighton", "away_team": "Chelsea"},
       {"home_team": "Crystal Palace", "away_team": "Everton"},
-      {"home_team": "Fulham", "away_team": "Nott'm Forest"},
+      {"home_team": "Fulham", "away_team": "Nottm Forest"},
       {"home_team": "Leicester", "away_team": "Arsenal"},
       {"home_team": "Liverpool", "away_team": "Wolves"},
       {"home_team": "Man City", "away_team": "Newcastle"},
@@ -463,7 +463,7 @@
       {"home_team": "Ipswich", "away_team": "Spurs"},
       {"home_team": "Leicester", "away_team": "Brentford"},
       {"home_team": "Man City", "away_team": "Liverpool"},
-      {"home_team": "Newcastle", "away_team": "Nott'm Forest"},
+      {"home_team": "Newcastle", "away_team": "Nottm Forest"},
       {"home_team": "Southampton", "away_team": "Brighton"}
     ]
   },
@@ -475,7 +475,7 @@
     "fixtures": [
       {"home_team": "Brentford", "away_team": "Everton"},
       {"home_team": "Brighton", "away_team": "Bournemouth"},
-      {"home_team": "Nott'm Forest", "away_team": "Arsenal"},
+      {"home_team": "Nottm Forest", "away_team": "Arsenal"},
       {"home_team": "Spurs", "away_team": "Man City"},
       {"home_team": "West Ham", "away_team": "Leicester"},
       {"home_team": "Wolves", "away_team": "Fulham"},
@@ -497,7 +497,7 @@
       {"home_team": "Crystal Palace", "away_team": "Ipswich"},
       {"home_team": "Liverpool", "away_team": "Southampton"},
       {"home_team": "Man Utd", "away_team": "Arsenal"},
-      {"home_team": "Nott'm Forest", "away_team": "Man City"},
+      {"home_team": "Nottm Forest", "away_team": "Man City"},
       {"home_team": "Spurs", "away_team": "Bournemouth"},
       {"home_team": "West Ham", "away_team": "Newcastle"},
       {"home_team": "Wolves", "away_team": "Everton"}
@@ -514,7 +514,7 @@
       {"home_team": "Bournemouth", "away_team": "Brentford"},
       {"home_team": "Everton", "away_team": "West Ham"},
       {"home_team": "Fulham", "away_team": "Spurs"},
-      {"home_team": "Ipswich", "away_team": "Nott'm Forest"},
+      {"home_team": "Ipswich", "away_team": "Nottm Forest"},
       {"home_team": "Leicester", "away_team": "Man Utd"},
       {"home_team": "Man City", "away_team": "Brighton"},
       {"home_team": "Newcastle", "away_team": "Crystal Palace"},
@@ -530,7 +530,7 @@
       {"home_team": "Arsenal", "away_team": "Fulham"},
       {"home_team": "Bournemouth", "away_team": "Ipswich"},
       {"home_team": "Brighton", "away_team": "Aston Villa"},
-      {"home_team": "Nott'm Forest", "away_team": "Man Utd"},
+      {"home_team": "Nottm Forest", "away_team": "Man Utd"},
       {"home_team": "Wolves", "away_team": "West Ham"},
       {"home_team": "Chelsea", "away_team": "Spurs"},
       {"home_team": "Man City", "away_team": "Leicester"},
@@ -545,7 +545,7 @@
     "end_date": "2025-04-06T23:59:59Z",
     "deadline": "2025-04-05T12:30:00Z",
     "fixtures": [
-      {"home_team": "Aston Villa", "away_team": "Nott'm Forest"},
+      {"home_team": "Aston Villa", "away_team": "Nottm Forest"},
       {"home_team": "Brentford", "away_team": "Chelsea"},
       {"home_team": "Crystal Palace", "away_team": "Brighton"},
       {"home_team": "Everton", "away_team": "Arsenal"},
@@ -570,7 +570,7 @@
       {"home_team": "Liverpool", "away_team": "West Ham"},
       {"home_team": "Man City", "away_team": "Crystal Palace"},
       {"home_team": "Newcastle", "away_team": "Man Utd"},
-      {"home_team": "Nott'm Forest", "away_team": "Everton"},
+      {"home_team": "Nottm Forest", "away_team": "Everton"},
       {"home_team": "Southampton", "away_team": "Aston Villa"},
       {"home_team": "Wolves", "away_team": "Spurs"}
     ]
@@ -589,7 +589,7 @@
       {"home_team": "Ipswich", "away_team": "Arsenal"},
       {"home_team": "Leicester", "away_team": "Liverpool"},
       {"home_team": "Man Utd", "away_team": "Wolves"},
-      {"home_team": "Spurs", "away_team": "Nott'm Forest"},
+      {"home_team": "Spurs", "away_team": "Nottm Forest"},
       {"home_team": "West Ham", "away_team": "Southampton"}
     ]
   },
@@ -606,7 +606,7 @@
       {"home_team": "Liverpool", "away_team": "Spurs"},
       {"home_team": "Man City", "away_team": "Aston Villa"},
       {"home_team": "Newcastle", "away_team": "Ipswich"},
-      {"home_team": "Nott'm Forest", "away_team": "Brentford"},
+      {"home_team": "Nottm Forest", "away_team": "Brentford"},
       {"home_team": "Southampton", "away_team": "Fulham"},
       {"home_team": "Wolves", "away_team": "Leicester"}
     ]
@@ -622,7 +622,7 @@
       {"home_team": "Brentford", "away_team": "Man Utd"},
       {"home_team": "Brighton", "away_team": "Newcastle"},
       {"home_team": "Chelsea", "away_team": "Liverpool"},
-      {"home_team": "Crystal Palace", "away_team": "Nott'm Forest"},
+      {"home_team": "Crystal Palace", "away_team": "Nottm Forest"},
       {"home_team": "Everton", "away_team": "Ipswich"},
       {"home_team": "Leicester", "away_team": "Southampton"},
       {"home_team": "Man City", "away_team": "Wolves"},
@@ -641,7 +641,7 @@
       {"home_team": "Liverpool", "away_team": "Arsenal"},
       {"home_team": "Man Utd", "away_team": "West Ham"},
       {"home_team": "Newcastle", "away_team": "Chelsea"},
-      {"home_team": "Nott'm Forest", "away_team": "Leicester"},
+      {"home_team": "Nottm Forest", "away_team": "Leicester"},
       {"home_team": "Southampton", "away_team": "Man City"},
       {"home_team": "Spurs", "away_team": "Crystal Palace"},
       {"home_team": "Wolves", "away_team": "Brighton"}
@@ -662,7 +662,7 @@
       {"home_team": "Everton", "away_team": "Southampton"},
       {"home_team": "Leicester", "away_team": "Ipswich"},
       {"home_team": "Man City", "away_team": "Bournemouth"},
-      {"home_team": "West Ham", "away_team": "Nott'm Forest"}
+      {"home_team": "West Ham", "away_team": "Nottm Forest"}
     ]
   },
   {
@@ -677,7 +677,7 @@
       {"home_team": "Liverpool", "away_team": "Crystal Palace"},
       {"home_team": "Man Utd", "away_team": "Aston Villa"},
       {"home_team": "Newcastle", "away_team": "Everton"},
-      {"home_team": "Nott'm Forest", "away_team": "Chelsea"},
+      {"home_team": "Nottm Forest", "away_team": "Chelsea"},
       {"home_team": "Southampton", "away_team": "Arsenal"},
       {"home_team": "Spurs", "away_team": "Brighton"},
       {"home_team": "Wolves", "away_team": "Brentford"}
