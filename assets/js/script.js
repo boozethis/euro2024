@@ -1,45 +1,57 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
-    const fixturesHeader = document.getElementById("fixtures-header");
     const countdownTimer = document.getElementById("countdown-timer");
-    const fixturesUrl = "../../fixtures.json"; // Update the path to the JSON file
+    const corsProxy = "https://api.allorigins.win/get?url=";
 
-    // Fetch fixtures data from the JSON file
+    const fixturesUrl = corsProxy + encodeURIComponent("https://lastmanballing.com/fixtures.json");
+
     fetch(fixturesUrl)
         .then(response => response.json())
         .then(data => {
-            const gameweeks = data.gameweeks;
+            const content = JSON.parse(data.contents); // Parse the JSON from the contents
             const currentDate = new Date();
-            
-            // Find the current gameweek based on the date
-            const currentGameweek = gameweeks.find(gameweek => {
+            let currentGameweek = null;
+
+            // Find the current gameweek based on the current date
+            for (let i = 0; i < content.gameweeks.length; i++) {
+                const gameweek = content.gameweeks[i];
                 const startDate = new Date(gameweek.start_date);
                 const endDate = new Date(gameweek.end_date);
-                return currentDate >= startDate && currentDate <= endDate;
-            });
+
+                if (currentDate >= startDate && currentDate <= endDate) {
+                    currentGameweek = gameweek;
+                    break;
+                }
+            }
 
             if (currentGameweek) {
-                // Update the header with the current gameweek number
-                fixturesHeader.textContent = `Gameweek ${currentGameweek.gameweek} Fixtures`;
+                const fixtures = currentGameweek.fixtures;
+                const gameweekNumber = currentGameweek.gameweek;
 
-                // Display the fixtures for the current gameweek
+                // Update header with gameweek number
+                const fixturesHeader = document.querySelector("#fixtures h2");
+                if (fixturesHeader) {
+                    fixturesHeader.textContent = `Gameweek ${gameweekNumber} Fixtures`;
+                }
+
+                // Display fixtures
                 fixturesList.innerHTML = '';
-                currentGameweek.fixtures.forEach(fixture => {
+                fixtures.forEach(fixture => {
                     const fixtureItem = document.createElement("div");
                     fixtureItem.textContent = `${fixture.home} vs ${fixture.away}`;
                     fixturesList.appendChild(fixtureItem);
                 });
 
-                // Set countdown timer to the first fixture of the current gameweek
-                const firstFixtureDate = new Date(currentGameweek.start_date);
+                // Set countdown timer to the kickoff of the first fixture of the gameweek
+                const firstFixtureDate = new Date(currentGameweek.fixtures[0].kickoff_time);
                 setCountdown(firstFixtureDate);
             } else {
-                fixturesList.innerHTML = '<p>No fixtures found for the current gameweek. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+                fixturesList.innerHTML = '<p>No fixtures found for the current gameweek. Please check back later.</p>';
             }
         })
         .catch(error => {
             console.error("Error fetching fixtures:", error);
-            fixturesList.innerHTML = '<p>Unable to load fixtures. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
+            fixturesList.innerHTML = '<p>Unable to load fixtures. Please check back later.</p>';
         });
 
     function setCountdown(kickoffTime) {
