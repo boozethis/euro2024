@@ -66,8 +66,6 @@ document.addEventListener("DOMContentLoaded", function() {
         updateCountdown(); // Initial call to set the countdown immediately
         setInterval(updateCountdown, 1000); // Update every second
     }
-});
-
 
     // FAQ toggle
     const faqItems = document.querySelectorAll(".faq-item h3");
