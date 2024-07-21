@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last Man Balling - Premier League Prediction Competition</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,6 +11,20 @@
     <meta name="description" content="Join Last Man Balling, the ultimate Premier League prediction competition! Predict weekly winners, survive the game, and win big. Pay £5 to enter, join our WhatsApp group, and compete for the grand Prizepot. Perfect for football fans who love the thrill of the Premier League.">
     <style>
         /* Inline critical CSS */
+        @font-face {
+            font-family: 'Google Sans';
+            src: url('assets/fonts/googlesans.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Google Sans';
+            src: url('assets/fonts/googlesansbold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
         body {
             font-family: 'Google Sans', sans-serif;
             background-color: #37003C;
@@ -25,6 +36,7 @@
             align-items: center;
             text-align: center;
         }
+
         header {
             background-color: #37003C;
             padding: 20px;
@@ -34,11 +46,13 @@
             width: 100%;
             z-index: 1000;
         }
+
         header .logo {
             width: 150px;
             height: auto;
             animation: logo-animation 1s ease-in-out;
         }
+
         @keyframes logo-animation {
             0% {
                 transform: scale(0);
@@ -49,6 +63,7 @@
                 opacity: 1;
             }
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -56,9 +71,11 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+
         nav ul li {
             margin: 5px;
         }
+
         .nav-item {
             display: block;
             padding: 10px 20px;
@@ -69,14 +86,17 @@
             font-weight: bold;
             transition: background 0.3s;
         }
+
         .nav-item:hover, .nav-item:focus {
             background: #fff;
             color: #37003C;
         }
+
         .nav-item-purple {
             background: linear-gradient(to right, #8A2BE2, #4B0082);
             color: #fff;
         }
+
         .nav-item-active {
             background: #fff;
             color: #37003C;
