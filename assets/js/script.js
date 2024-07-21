@@ -4,10 +4,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const countdownTimer = document.getElementById("countdown-timer");
     const fixturesUrl = "assets/js/fixtures.json"; // Update the path to the JSON file
 
+    // Verify that elements exist
+    console.log("fixturesList:", fixturesList);
+    console.log("fixturesHeader:", fixturesHeader);
+    console.log("countdownTimer:", countdownTimer);
+
     // Fetch fixtures data from the JSON file
     fetch(fixturesUrl)
         .then(response => response.json())
         .then(data => {
+            console.log("Data fetched:", data);
             const gameweeks = data;
             const currentDate = new Date();
 
