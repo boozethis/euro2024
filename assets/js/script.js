@@ -1,20 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
     const countdownTimer = document.getElementById("countdown-timer");
-    const corsProxy = "https://api.allorigins.win/get?url=";
-
-    const fixturesUrl = corsProxy + encodeURIComponent("https://lastmanballing.com/fixtures.json");
+    const fixturesUrl = "/fixtures.json";
 
     fetch(fixturesUrl)
         .then(response => response.json())
         .then(data => {
-            const content = JSON.parse(data.contents); // Parse the JSON from the contents
             const currentDate = new Date();
             let currentGameweek = null;
 
             // Find the current gameweek based on the current date
-            for (let i = 0; i < content.gameweeks.length; i++) {
-                const gameweek = content.gameweeks[i];
+            for (let i = 0; i < data.gameweeks.length; i++) {
+                const gameweek = data.gameweeks[i];
                 const startDate = new Date(gameweek.start_date);
                 const endDate = new Date(gameweek.end_date);
 
