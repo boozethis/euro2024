@@ -2,37 +2,41 @@ document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
     const fixturesHeader = document.getElementById("fixtures-header");
     const countdownTimer = document.getElementById("countdown-timer");
-    const fixturesUrl = "../../fixtures.json"; // Update the path to the JSON file
+    const fixturesUrl = "assets/js/fixtures.json"; // Update the path to the JSON file
 
     // Fetch fixtures data from the JSON file
     fetch(fixturesUrl)
         .then(response => response.json())
         .then(data => {
-            const gameweeks = data.gameweeks;
+            const gameweeks = data;
             const currentDate = new Date();
-            
+
             // Find the current gameweek based on the date
             const currentGameweek = gameweeks.find(gameweek => {
-                const startDate = new Date(gameweek.start_date);
-                const endDate = new Date(gameweek.end_date);
-                return currentDate >= startDate && currentDate <= endDate;
+                const deadline = new Date(gameweek.deadline);
+                return currentDate <= deadline;
             });
 
             if (currentGameweek) {
                 // Update the header with the current gameweek number
                 fixturesHeader.textContent = `Gameweek ${currentGameweek.gameweek} Fixtures`;
 
+                // Calculate the start of the week (Monday) after the previous deadline
+                const previousGameweekIndex = gameweeks.indexOf(currentGameweek) - 1;
+                const previousGameweek = gameweeks[previousGameweekIndex];
+                const startDate = previousGameweek ? new Date(previousGameweek.deadline) : new Date();
+                startDate.setDate(startDate.getDate() - startDate.getDay() + 1); // Set to Monday
+
                 // Display the fixtures for the current gameweek
                 fixturesList.innerHTML = '';
                 currentGameweek.fixtures.forEach(fixture => {
                     const fixtureItem = document.createElement("div");
-                    fixtureItem.textContent = `${fixture.home} vs ${fixture.away}`;
+                    fixtureItem.textContent = `${fixture.home_team} vs ${fixture.away_team}`;
                     fixturesList.appendChild(fixtureItem);
                 });
 
-                // Set countdown timer to the first fixture of the current gameweek
-                const firstFixtureDate = new Date(currentGameweek.start_date);
-                setCountdown(firstFixtureDate);
+                // Set countdown timer to the current gameweek's deadline
+                setCountdown(new Date(currentGameweek.deadline));
             } else {
                 fixturesList.innerHTML = '<p>No fixtures found for the current gameweek. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
             }
@@ -62,6 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
         updateCountdown(); // Initial call to set the countdown immediately
         setInterval(updateCountdown, 1000); // Update every second
     }
+});
+
 
     // FAQ toggle
     const faqItems = document.querySelectorAll(".faq-item h3");
