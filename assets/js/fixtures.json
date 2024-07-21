@@ -1,6 +1,8 @@
 [
   {
     "gameweek": 1,
+    "start_date": "2024-07-01T00:00:00Z",
+    "end_date": "2024-08-18T23:59:59Z",
     "deadline": "2024-08-16T17:30:00Z",
     "fixtures": [
       {"home_team": "Man Utd", "away_team": "Fulham"},
@@ -17,6 +19,8 @@
   },
   {
     "gameweek": 2,
+    "start_date": "2024-08-19T00:00:00Z",
+    "end_date": "2024-08-25T23:59:59Z",
     "deadline": "2024-08-24T10:00:00Z",
     "fixtures": [
       {"home_team": "Brighton", "away_team": "Man Utd"},
@@ -33,6 +37,8 @@
   },
   {
     "gameweek": 3,
+    "start_date": "2024-08-26T00:00:00Z",
+    "end_date": "2024-09-01T23:59:59Z",
     "deadline": "2024-08-31T10:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Brighton"},
@@ -49,6 +55,8 @@
   },
   {
     "gameweek": 4,
+    "start_date": "2024-09-02T00:00:00Z",
+    "end_date": "2024-09-08T23:59:59Z",
     "deadline": "2024-09-14T10:00:00Z",
     "fixtures": [
       {"home_team": "Southampton", "away_team": "Man Utd"},
@@ -65,6 +73,8 @@
   },
   {
     "gameweek": 5,
+    "start_date": "2024-09-09T00:00:00Z",
+    "end_date": "2024-09-15T23:59:59Z",
     "deadline": "2024-09-21T10:00:00Z",
     "fixtures": [
       {"home_team": "West Ham", "away_team": "Chelsea"},
@@ -81,6 +91,8 @@
   },
   {
     "gameweek": 6,
+    "start_date": "2024-09-16T00:00:00Z",
+    "end_date": "2024-09-22T23:59:59Z",
     "deadline": "2024-09-28T10:00:00Z",
     "fixtures": [
       {"home_team": "Newcastle", "away_team": "Man City"},
@@ -97,6 +109,8 @@
   },
   {
     "gameweek": 7,
+    "start_date": "2024-09-23T00:00:00Z",
+    "end_date": "2024-09-29T23:59:59Z",
     "deadline": "2024-10-05T12:30:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Southampton"},
@@ -113,6 +127,8 @@
   },
   {
     "gameweek": 8,
+    "start_date": "2024-09-30T00:00:00Z",
+    "end_date": "2024-10-06T23:59:59Z",
     "deadline": "2024-10-19T10:00:00Z",
     "fixtures": [
       {"home_team": "Bournemouth", "away_team": "Arsenal"},
@@ -129,6 +145,8 @@
   },
   {
     "gameweek": 9,
+    "start_date": "2024-10-07T00:00:00Z",
+    "end_date": "2024-10-13T23:59:59Z",
     "deadline": "2024-10-26T10:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Liverpool"},
@@ -145,6 +163,8 @@
   },
   {
     "gameweek": 10,
+    "start_date": "2024-10-14T00:00:00Z",
+    "end_date": "2024-10-20T23:59:59Z",
     "deadline": "2024-11-02T10:00:00Z",
     "fixtures": [
       {"home_team": "Bournemouth", "away_team": "Man City"},
@@ -161,6 +181,8 @@
   },
   {
     "gameweek": 11,
+    "start_date": "2024-10-21T00:00:00Z",
+    "end_date": "2024-10-27T23:59:59Z",
     "deadline": "2024-11-09T10:00:00Z",
     "fixtures": [
       {"home_team": "Brentford", "away_team": "Bournemouth"},
@@ -177,6 +199,8 @@
   },
   {
     "gameweek": 12,
+    "start_date": "2024-10-28T00:00:00Z",
+    "end_date": "2024-11-03T23:59:59Z",
     "deadline": "2024-11-23T10:00:00Z",
     "fixtures": [
       {"home_team": "Bournemouth", "away_team": "Brighton"},
@@ -193,6 +217,8 @@
   },
   {
     "gameweek": 13,
+    "start_date": "2024-11-04T00:00:00Z",
+    "end_date": "2024-11-10T23:59:59Z",
     "deadline": "2024-11-30T10:00:00Z",
     "fixtures": [
       {"home_team": "Brentford", "away_team": "Leicester"},
@@ -209,6 +235,8 @@
   },
   {
     "gameweek": 14,
+    "start_date": "2024-11-11T00:00:00Z",
+    "end_date": "2024-11-17T23:59:59Z",
     "deadline": "2024-12-07T10:00:00Z",
     "fixtures": [
       {"home_team": "Bournemouth", "away_team": "Spurs"},
@@ -225,6 +253,8 @@
   },
   {
     "gameweek": 15,
+    "start_date": "2024-11-18T00:00:00Z",
+    "end_date": "2024-11-24T23:59:59Z",
     "deadline": "2024-12-14T10:00:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "Southampton"},
@@ -241,6 +271,8 @@
   },
   {
     "gameweek": 16,
+    "start_date": "2024-11-25T00:00:00Z",
+    "end_date": "2024-12-01T23:59:59Z",
     "deadline": "2024-12-21T10:00:00Z",
     "fixtures": [
       {"home_team": "Bournemouth", "away_team": "West Ham"},
@@ -257,6 +289,8 @@
   },
   {
     "gameweek": 17,
+    "start_date": "2024-12-02T00:00:00Z",
+    "end_date": "2024-12-08T23:59:59Z",
     "deadline": "2024-12-28T10:00:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "Man City"},
@@ -273,6 +307,8 @@
   },
   {
     "gameweek": 18,
+    "start_date": "2024-12-09T00:00:00Z",
+    "end_date": "2024-12-15T23:59:59Z",
     "deadline": "2025-01-04T10:00:00Z",
     "fixtures": [
       {"home_team": "Bournemouth", "away_team": "Crystal Palace"},
@@ -282,329 +318,369 @@
       {"home_team": "Liverpool", "away_team": "Leicester"},
       {"home_team": "Man City", "away_team": "Everton"},
       {"home_team": "Newcastle", "away_team": "Aston Villa"},
-      {"home_team": "Nott'm Forest", "away_team": "Spurs"},
-      {"home_team": "Southampton", "away_team": "West Ham"},
-      {"home_team": "Wolves", "away_team": "Man Utd"}
+      {"home_team": "Nott'm Forest", "away_team": "Southampton"},
+      {"home_team": "Wolves", "away_team": "Man Utd"},
+      {"home_team": "West Ham", "away_team": "Spurs"}
     ]
   },
   {
     "gameweek": 19,
+    "start_date": "2024-12-16T00:00:00Z",
+    "end_date": "2024-12-22T23:59:59Z",
     "deadline": "2025-01-11T10:00:00Z",
     "fixtures": [
-      {"home_team": "Aston Villa", "away_team": "Brighton"},
-      {"home_team": "Brentford", "away_team": "Arsenal"},
-      {"home_team": "Crystal Palace", "away_team": "Southampton"},
-      {"home_team": "Everton", "away_team": "Nott'm Forest"},
-      {"home_team": "Fulham", "away_team": "Bournemouth"},
-      {"home_team": "Ipswich", "away_team": "Chelsea"},
-      {"home_team": "Leicester", "away_team": "Man City"},
-      {"home_team": "Man Utd", "away_team": "Newcastle"},
-      {"home_team": "Spurs", "away_team": "Wolves"},
-      {"home_team": "West Ham", "away_team": "Liverpool"}
+      {"home_team": "Aston Villa", "away_team": "Man Utd"},
+      {"home_team": "Brentford", "away_team": "Spurs"},
+      {"home_team": "Crystal Palace", "away_team": "Brighton"},
+      {"home_team": "Everton", "away_team": "Liverpool"},
+      {"home_team": "Fulham", "away_team": "Chelsea"},
+      {"home_team": "Ipswich", "away_team": "Arsenal"},
+      {"home_team": "Leicester", "away_team": "Nott'm Forest"},
+      {"home_team": "Man City", "away_team": "Wolves"},
+      {"home_team": "Newcastle", "away_team": "West Ham"},
+      {"home_team": "Southampton", "away_team": "Bournemouth"}
     ]
   },
   {
     "gameweek": 20,
+    "start_date": "2024-12-23T00:00:00Z",
+    "end_date": "2024-12-29T23:59:59Z",
     "deadline": "2025-01-18T10:00:00Z",
     "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Everton"},
-      {"home_team": "Aston Villa", "away_team": "Leicester"},
-      {"home_team": "Brighton", "away_team": "Arsenal"},
-      {"home_team": "Crystal Palace", "away_team": "Chelsea"},
-      {"home_team": "Fulham", "away_team": "Ipswich"},
-      {"home_team": "Liverpool", "away_team": "Man Utd"},
-      {"home_team": "Man City", "away_team": "West Ham"},
-      {"home_team": "Southampton", "away_team": "Brentford"},
-      {"home_team": "Spurs", "away_team": "Newcastle"},
+      {"home_team": "Bournemouth", "away_team": "Man City"},
+      {"home_team": "Arsenal", "away_team": "Liverpool"},
+      {"home_team": "Aston Villa", "away_team": "Fulham"},
+      {"home_team": "Brighton", "away_team": "Chelsea"},
+      {"home_team": "Crystal Palace", "away_team": "Everton"},
+      {"home_team": "Leicester", "away_team": "Ipswich"},
+      {"home_team": "Man Utd", "away_team": "Brentford"},
+      {"home_team": "Spurs", "away_team": "Southampton"},
+      {"home_team": "West Ham", "away_team": "Newcastle"},
       {"home_team": "Wolves", "away_team": "Nott'm Forest"}
     ]
   },
   {
     "gameweek": 21,
-    "deadline": "2025-01-25T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Arsenal", "away_team": "Spurs"},
-      {"home_team": "Brentford", "away_team": "Man City"},
-      {"home_team": "Chelsea", "away_team": "Bournemouth"},
-      {"home_team": "Everton", "away_team": "Aston Villa"},
-      {"home_team": "Fulham", "away_team": "Crystal Palace"},
-      {"home_team": "Ipswich", "away_team": "Brighton"},
-      {"home_team": "Leicester", "away_team": "West Ham"},
-      {"home_team": "Liverpool", "away_team": "Nott'm Forest"},
-      {"home_team": "Man Utd", "away_team": "Southampton"},
-      {"home_team": "Newcastle", "away_team": "Wolves"}
-    ]
-  },
-  {
-    "gameweek": 22,
+    "start_date": "2024-12-30T00:00:00Z",
+    "end_date": "2025-01-05T23:59:59Z",
     "deadline": "2025-02-01T10:00:00Z",
     "fixtures": [
-      {"home_team": "Arsenal", "away_team": "Aston Villa"},
       {"home_team": "Brentford", "away_team": "Liverpool"},
-      {"home_team": "Chelsea", "away_team": "Wolves"},
-      {"home_team": "Everton", "away_team": "Spurs"},
-      {"home_team": "Ipswich", "away_team": "Man City"},
-      {"home_team": "Leicester", "away_team": "Fulham"},
-      {"home_team": "Man Utd", "away_team": "Brighton"},
-      {"home_team": "Newcastle", "away_team": "Bournemouth"},
-      {"home_team": "Nott'm Forest", "away_team": "Southampton"},
-      {"home_team": "West Ham", "away_team": "Crystal Palace"}
-    ]
-  },
-  {
-    "gameweek": 23,
-    "deadline": "2025-02-08T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Nott'm Forest"},
-      {"home_team": "Aston Villa", "away_team": "West Ham"},
-      {"home_team": "Brighton", "away_team": "Everton"},
-      {"home_team": "Crystal Palace", "away_team": "Brentford"},
-      {"home_team": "Fulham", "away_team": "Man Utd"},
-      {"home_team": "Liverpool", "away_team": "Ipswich"},
-      {"home_team": "Man City", "away_team": "Chelsea"},
-      {"home_team": "Southampton", "away_team": "Newcastle"},
-      {"home_team": "Spurs", "away_team": "Leicester"},
-      {"home_team": "Wolves", "away_team": "Arsenal"}
-    ]
-  },
-  {
-    "gameweek": 24,
-    "deadline": "2025-02-15T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Liverpool"},
-      {"home_team": "Arsenal", "away_team": "Man City"},
-      {"home_team": "Brentford", "away_team": "Spurs"},
-      {"home_team": "Chelsea", "away_team": "West Ham"},
-      {"home_team": "Everton", "away_team": "Leicester"},
-      {"home_team": "Ipswich", "away_team": "Southampton"},
-      {"home_team": "Man Utd", "away_team": "Crystal Palace"},
-      {"home_team": "Newcastle", "away_team": "Fulham"},
-      {"home_team": "Nott'm Forest", "away_team": "Brighton"},
-      {"home_team": "Wolves", "away_team": "Aston Villa"}
-    ]
-  },
-  {
-    "gameweek": 25,
-    "deadline": "2025-02-22T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Aston Villa", "away_team": "Ipswich"},
-      {"home_team": "Brighton", "away_team": "Chelsea"},
-      {"home_team": "Crystal Palace", "away_team": "Everton"},
-      {"home_team": "Fulham", "away_team": "Nott'm Forest"},
-      {"home_team": "Leicester", "away_team": "Arsenal"},
-      {"home_team": "Liverpool", "away_team": "Wolves"},
-      {"home_team": "Man City", "away_team": "Newcastle"},
-      {"home_team": "Southampton", "away_team": "Bournemouth"},
-      {"home_team": "Spurs", "away_team": "Man Utd"},
-      {"home_team": "West Ham", "away_team": "Brentford"}
-    ]
-  },
-  {
-    "gameweek": 26,
-    "deadline": "2025-03-01T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Wolves"},
-      {"home_team": "Arsenal", "away_team": "West Ham"},
-      {"home_team": "Aston Villa", "away_team": "Chelsea"},
-      {"home_team": "Everton", "away_team": "Man Utd"},
-      {"home_team": "Fulham", "away_team": "Crystal Palace"},
-      {"home_team": "Ipswich", "away_team": "Spurs"},
-      {"home_team": "Leicester", "away_team": "Brentford"},
-      {"home_team": "Man City", "away_team": "Liverpool"},
-      {"home_team": "Newcastle", "away_team": "Nott'm Forest"},
-      {"home_team": "Southampton", "away_team": "Brighton"}
-    ]
-  },
-  {
-    "gameweek": 27,
-    "deadline": "2025-03-08T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Brentford", "away_team": "Everton"},
-      {"home_team": "Brighton", "away_team": "Bournemouth"},
-      {"home_team": "Chelsea", "away_team": "Southampton"},
-      {"home_team": "Crystal Palace", "away_team": "Aston Villa"},
-      {"home_team": "Liverpool", "away_team": "Newcastle"},
-      {"home_team": "Man Utd", "away_team": "Ipswich"},
-      {"home_team": "Man City", "away_team": "Nott'm Forest"},
-      {"home_team": "Spurs", "away_team": "West Ham"},
-      {"home_team": "Wolves", "away_team": "Fulham"},
-      {"home_team": "Leicester", "away_team": "Arsenal"}
-    ]
-  },
-  {
-    "gameweek": 28,
-    "deadline": "2025-03-15T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Brentford", "away_team": "Aston Villa"},
-      {"home_team": "Brighton", "away_team": "Fulham"},
-      {"home_team": "Chelsea", "away_team": "Leicester"},
-      {"home_team": "Crystal Palace", "away_team": "Ipswich"},
-      {"home_team": "Liverpool", "away_team": "Southampton"},
-      {"home_team": "Man Utd", "away_team": "Arsenal"},
-      {"home_team": "Nott'm Forest", "away_team": "Man City"},
-      {"home_team": "Spurs", "away_team": "Bournemouth"},
-      {"home_team": "West Ham", "away_team": "Newcastle"},
-      {"home_team": "Wolves", "away_team": "Everton"}
-    ]
-  },
-  {
-    "gameweek": 29,
-    "deadline": "2025-03-22T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Brentford"},
-      {"home_team": "Arsenal", "away_team": "Chelsea"},
-      {"home_team": "Aston Villa", "away_team": "Liverpool"},
-      {"home_team": "Everton", "away_team": "West Ham"},
-      {"home_team": "Fulham", "away_team": "Spurs"},
-      {"home_team": "Ipswich", "away_team": "Nott'm Forest"},
-      {"home_team": "Leicester", "away_team": "Man Utd"},
-      {"home_team": "Man City", "away_team": "Brighton"},
-      {"home_team": "Newcastle", "away_team": "Crystal Palace"},
-      {"home_team": "Southampton", "away_team": "Wolves"}
-    ]
-  },
-  {
-    "gameweek": 30,
-    "deadline": "2025-03-29T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Ipswich"},
-      {"home_team": "Arsenal", "away_team": "Fulham"},
-      {"home_team": "Brighton", "away_team": "Aston Villa"},
-      {"home_team": "Chelsea", "away_team": "Spurs"},
-      {"home_team": "Man City", "away_team": "Leicester"},
-      {"home_team": "Newcastle", "away_team": "Brentford"},
-      {"home_team": "Nott'm Forest", "away_team": "Liverpool"},
-      {"home_team": "Southampton", "away_team": "Crystal Palace"},
-      {"home_team": "Wolves", "away_team": "West Ham"},
-      {"home_team": "Man Utd", "away_team": "Everton"}
-    ]
-  },
-  {
-    "gameweek": 31,
-    "deadline": "2025-04-05T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Aston Villa", "away_team": "Nott'm Forest"},
-      {"home_team": "Brentford", "away_team": "Chelsea"},
-      {"home_team": "Crystal Palace", "away_team": "Brighton"},
-      {"home_team": "Everton", "away_team": "Arsenal"},
-      {"home_team": "Fulham", "away_team": "Liverpool"},
-      {"home_team": "Ipswich", "away_team": "Wolves"},
-      {"home_team": "Leicester", "away_team": "Newcastle"},
-      {"home_team": "Man Utd", "away_team": "Man City"},
-      {"home_team": "Spurs", "away_team": "Southampton"},
-      {"home_team": "West Ham", "away_team": "Bournemouth"}
-    ]
-  },
-  {
-    "gameweek": 32,
-    "deadline": "2025-04-12T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Fulham"},
-      {"home_team": "Arsenal", "away_team": "Brentford"},
-      {"home_team": "Brighton", "away_team": "Leicester"},
+      {"home_team": "Brighton", "away_team": "Man Utd"},
       {"home_team": "Chelsea", "away_team": "Ipswich"},
-      {"home_team": "Liverpool", "away_team": "West Ham"},
-      {"home_team": "Man City", "away_team": "Crystal Palace"},
-      {"home_team": "Newcastle", "away_team": "Man Utd"},
-      {"home_team": "Nott'm Forest", "away_team": "Everton"},
-      {"home_team": "Southampton", "away_team": "Aston Villa"},
-      {"home_team": "Wolves", "away_team": "Spurs"}
-    ]
-  },
-  {
-    "gameweek": 33,
-    "deadline": "2025-04-19T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Aston Villa", "away_team": "Newcastle"},
-      {"home_team": "Brentford", "away_team": "Brighton"},
-      {"home_team": "Crystal Palace", "away_team": "Bournemouth"},
       {"home_team": "Everton", "away_team": "Man City"},
-      {"home_team": "Fulham", "away_team": "Chelsea"},
-      {"home_team": "Ipswich", "away_team": "Arsenal"},
-      {"home_team": "Leicester", "away_team": "Liverpool"},
-      {"home_team": "Man Utd", "away_team": "Wolves"},
-      {"home_team": "Spurs", "away_team": "Nott'm Forest"},
-      {"home_team": "West Ham", "away_team": "Southampton"}
-    ]
-  },
-  {
-    "gameweek": 34,
-    "deadline": "2025-04-26T10:00:00Z",
-    "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Man Utd"},
-      {"home_team": "Arsenal", "away_team": "Crystal Palace"},
-      {"home_team": "Brighton", "away_team": "West Ham"},
-      {"home_team": "Chelsea", "away_team": "Everton"},
-      {"home_team": "Liverpool", "away_team": "Spurs"},
-      {"home_team": "Man City", "away_team": "Aston Villa"},
-      {"home_team": "Newcastle", "away_team": "Ipswich"},
-      {"home_team": "Nott'm Forest", "away_team": "Brentford"},
-      {"home_team": "Southampton", "away_team": "Fulham"},
+      {"home_team": "Fulham", "away_team": "Bournemouth"},
+      {"home_team": "Newcastle", "away_team": "Arsenal"},
+      {"home_team": "Nott'm Forest", "away_team": "Aston Villa"},
+      {"home_team": "Southampton", "away_team": "Crystal Palace"},
+      {"home_team": "Spurs", "away_team": "West Ham"},
       {"home_team": "Wolves", "away_team": "Leicester"}
     ]
   },
   {
-    "gameweek": 35,
-    "deadline": "2025-05-03T10:00:00Z",
+    "gameweek": 22,
+    "start_date": "2025-01-06T00:00:00Z",
+    "end_date": "2025-01-12T23:59:59Z",
+    "deadline": "2025-02-08T10:00:00Z",
     "fixtures": [
-      {"home_team": "Arsenal", "away_team": "Bournemouth"},
+      {"home_team": "Bournemouth", "away_team": "Spurs"},
+      {"home_team": "Arsenal", "away_team": "Crystal Palace"},
+      {"home_team": "Brentford", "away_team": "Brighton"},
+      {"home_team": "Chelsea", "away_team": "Everton"},
+      {"home_team": "Ipswich", "away_team": "Man City"},
+      {"home_team": "Man Utd", "away_team": "Newcastle"},
       {"home_team": "Aston Villa", "away_team": "Fulham"},
-      {"home_team": "Brentford", "away_team": "Man Utd"},
-      {"home_team": "Brighton", "away_team": "Newcastle"},
-      {"home_team": "Chelsea", "away_team": "Liverpool"},
-      {"home_team": "Crystal Palace", "away_team": "Nott'm Forest"},
-      {"home_team": "Everton", "away_team": "Ipswich"},
-      {"home_team": "Leicester", "away_team": "Southampton"},
-      {"home_team": "Man City", "away_team": "Wolves"},
-      {"home_team": "West Ham", "away_team": "Spurs"}
+      {"home_team": "Liverpool", "away_team": "Southampton"},
+      {"home_team": "West Ham", "away_team": "Wolves"},
+      {"home_team": "Leicester", "away_team": "Nott'm Forest"}
     ]
   },
   {
-    "gameweek": 36,
-    "deadline": "2025-05-10T10:00:00Z",
+    "gameweek": 23,
+    "start_date": "2025-01-13T00:00:00Z",
+    "end_date": "2025-01-19T23:59:59Z",
+    "deadline": "2025-02-15T10:00:00Z",
     "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Aston Villa"},
-      {"home_team": "Fulham", "away_team": "Everton"},
-      {"home_team": "Ipswich", "away_team": "Brentford"},
-      {"home_team": "Liverpool", "away_team": "Arsenal"},
+      {"home_team": "Brighton", "away_team": "West Ham"},
+      {"home_team": "Crystal Palace", "away_team": "Aston Villa"},
+      {"home_team": "Everton", "away_team": "Man Utd"},
+      {"home_team": "Fulham", "away_team": "Chelsea"},
+      {"home_team": "Ipswich", "away_team": "Bournemouth"},
+      {"home_team": "Man City", "away_team": "Liverpool"},
+      {"home_team": "Newcastle", "away_team": "Arsenal"},
+      {"home_team": "Nott'm Forest", "away_team": "Spurs"},
+      {"home_team": "Southampton", "away_team": "Leicester"},
+      {"home_team": "Wolves", "away_team": "Brentford"}
+    ]
+  },
+  {
+    "gameweek": 24,
+    "start_date": "2025-01-20T00:00:00Z",
+    "end_date": "2025-01-26T23:59:59Z",
+    "deadline": "2025-02-22T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Aston Villa", "away_team": "Wolves"},
+      {"home_team": "Brentford", "away_team": "Arsenal"},
+      {"home_team": "Brighton", "away_team": "Everton"},
+      {"home_team": "Chelsea", "away_team": "Man Utd"},
+      {"home_team": "Liverpool", "away_team": "Ipswich"},
+      {"home_team": "Man City", "away_team": "Crystal Palace"},
+      {"home_team": "Newcastle", "away_team": "Fulham"},
+      {"home_team": "Nott'm Forest", "away_team": "Bournemouth"},
+      {"home_team": "Spurs", "away_team": "Southampton"},
+      {"home_team": "West Ham", "away_team": "Leicester"}
+    ]
+  },
+  {
+    "gameweek": 25,
+    "start_date": "2025-01-27T00:00:00Z",
+    "end_date": "2025-02-02T23:59:59Z",
+    "deadline": "2025-03-01T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Bournemouth", "away_team": "Brentford"},
+      {"home_team": "Arsenal", "away_team": "Spurs"},
+      {"home_team": "Aston Villa", "away_team": "Brighton"},
+      {"home_team": "Crystal Palace", "away_team": "Chelsea"},
+      {"home_team": "Everton", "away_team": "Man City"},
+      {"home_team": "Fulham", "away_team": "Wolves"},
+      {"home_team": "Ipswich", "away_team": "West Ham"},
+      {"home_team": "Man Utd", "away_team": "Liverpool"},
+      {"home_team": "Leicester", "away_team": "Newcastle"},
+      {"home_team": "Southampton", "away_team": "Nott'm Forest"}
+    ]
+  },
+  {
+    "gameweek": 26,
+    "start_date": "2025-02-03T00:00:00Z",
+    "end_date": "2025-02-09T23:59:59Z",
+    "deadline": "2025-03-07T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Brighton", "away_team": "Southampton"},
+      {"home_team": "Chelsea", "away_team": "Liverpool"},
+      {"home_team": "Everton", "away_team": "Spurs"},
+      {"home_team": "Fulham", "away_team": "Ipswich"},
+      {"home_team": "Man City", "away_team": "Bournemouth"},
+      {"home_team": "Newcastle", "away_team": "Nott'm Forest"},
+      {"home_team": "Nott'm Forest", "away_team": "Aston Villa"},
+      {"home_team": "Wolves", "away_team": "Brentford"},
+      {"home_team": "Man Utd", "away_team": "Arsenal"},
+      {"home_team": "West Ham", "away_team": "Crystal Palace"}
+    ]
+  },
+  {
+    "gameweek": 27,
+    "start_date": "2025-02-10T00:00:00Z",
+    "end_date": "2025-02-16T23:59:59Z",
+    "deadline": "2025-03-14T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Bournemouth", "away_team": "Fulham"},
+      {"home_team": "Arsenal", "away_team": "Brentford"},
+      {"home_team": "Aston Villa", "away_team": "Liverpool"},
+      {"home_team": "Brentford", "away_team": "Chelsea"},
+      {"home_team": "Crystal Palace", "away_team": "Ipswich"},
+      {"home_team": "Everton", "away_team": "Southampton"},
+      {"home_team": "Leicester", "away_team": "Man City"},
       {"home_team": "Man Utd", "away_team": "West Ham"},
-      {"home_team": "Newcastle", "away_team": "Chelsea"},
-      {"home_team": "Nott'm Forest", "away_team": "Leicester"},
-      {"home_team": "Southampton", "away_team": "Man City"},
-      {"home_team": "Spurs", "away_team": "Crystal Palace"},
+      {"home_team": "Newcastle", "away_team": "Spurs"},
       {"home_team": "Wolves", "away_team": "Brighton"}
     ]
   },
   {
-    "gameweek": 37,
-    "deadline": "2025-05-17T10:00:00Z",
+    "gameweek": 28,
+    "start_date": "2025-02-17T00:00:00Z",
+    "end_date": "2025-02-23T23:59:59Z",
+    "deadline": "2025-03-21T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Bournemouth", "away_team": "Newcastle"},
+      {"home_team": "Fulham", "away_team": "Arsenal"},
+      {"home_team": "Liverpool", "away_team": "Brighton"},
+      {"home_team": "Man City", "away_team": "Ipswich"},
+      {"home_team": "Newcastle", "away_team": "Nott'm Forest"},
+      {"home_team": "Nott'm Forest", "away_team": "Everton"},
+      {"home_team": "Southampton", "away_team": "West Ham"},
+      {"home_team": "Spurs", "away_team": "Aston Villa"},
+      {"home_team": "Wolves", "away_team": "Chelsea"},
+      {"home_team": "Man Utd", "away_team": "Brentford"}
+    ]
+  },
+  {
+    "gameweek": 29,
+    "start_date": "2025-02-24T00:00:00Z",
+    "end_date": "2025-03-02T23:59:59Z",
+    "deadline": "2025-03-28T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Brighton", "away_team": "Wolves"},
+      {"home_team": "Chelsea", "away_team": "Southampton"},
+      {"home_team": "Everton", "away_team": "Liverpool"},
+      {"home_team": "Fulham", "away_team": "Man City"},
+      {"home_team": "Ipswich", "away_team": "Newcastle"},
+      {"home_team": "Man Utd", "away_team": "Arsenal"},
+      {"home_team": "Nott'm Forest", "away_team": "Brentford"},
+      {"home_team": "Spurs", "away_team": "West Ham"},
+      {"home_team": "West Ham", "away_team": "Aston Villa"},
+      {"home_team": "Leicester", "away_team": "Bournemouth"}
+    ]
+  },
+  {
+    "gameweek": 30,
+    "start_date": "2025-03-03T00:00:00Z",
+    "end_date": "2025-03-09T23:59:59Z",
+    "deadline": "2025-04-04T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Bournemouth", "away_team": "Everton"},
+      {"home_team": "Arsenal", "away_team": "Nott'm Forest"},
+      {"home_team": "Aston Villa", "away_team": "Leicester"},
+      {"home_team": "Brighton", "away_team": "Ipswich"},
+      {"home_team": "Chelsea", "away_team": "Fulham"},
+      {"home_team": "Crystal Palace", "away_team": "Spurs"},
+      {"home_team": "Liverpool", "away_team": "Brentford"},
+      {"home_team": "Man City", "away_team": "Man Utd"},
+      {"home_team": "Newcastle", "away_team": "West Ham"},
+      {"home_team": "Southampton", "away_team": "Wolves"}
+    ]
+  },
+  {
+    "gameweek": 31,
+    "start_date": "2025-03-10T00:00:00Z",
+    "end_date": "2025-03-16T23:59:59Z",
+    "deadline": "2025-04-11T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Arsenal", "away_team": "Fulham"},
+      {"home_team": "Aston Villa", "away_team": "Man City"},
+      {"home_team": "Brentford", "away_team": "Chelsea"},
+      {"home_team": "Crystal Palace", "away_team": "Liverpool"},
+      {"home_team": "Everton", "away_team": "Brighton"},
+      {"home_team": "Ipswich", "away_team": "Spurs"},
+      {"home_team": "Leicester", "away_team": "Bournemouth"},
+      {"home_team": "Man Utd", "away_team": "West Ham"},
+      {"home_team": "Newcastle", "away_team": "Southampton"},
+      {"home_team": "Wolves", "away_team": "Nott'm Forest"}
+    ]
+  },
+  {
+    "gameweek": 32,
+    "start_date": "2025-03-17T00:00:00Z",
+    "end_date": "2025-03-23T23:59:59Z",
+    "deadline": "2025-04-18T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Brighton", "away_team": "Chelsea"},
+      {"home_team": "Fulham", "away_team": "Man Utd"},
+      {"home_team": "Liverpool", "away_team": "Nott'm Forest"},
+      {"home_team": "Man City", "away_team": "Arsenal"},
+      {"home_team": "Newcastle", "away_team": "Ipswich"},
+      {"home_team": "Southampton", "away_team": "Spurs"},
+      {"home_team": "West Ham", "away_team": "Crystal Palace"},
+      {"home_team": "Wolves", "away_team": "Everton"},
+      {"home_team": "Bournemouth", "away_team": "Leicester"},
+      {"home_team": "Brentford", "away_team": "Aston Villa"}
+    ]
+  },
+  {
+    "gameweek": 33,
+    "start_date": "2025-03-24T00:00:00Z",
+    "end_date": "2025-03-30T23:59:59Z",
+    "deadline": "2025-04-25T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Arsenal", "away_team": "Southampton"},
+      {"home_team": "Aston Villa", "away_team": "Chelsea"},
+      {"home_team": "Brentford", "away_team": "Newcastle"},
+      {"home_team": "Crystal Palace", "away_team": "Bournemouth"},
+      {"home_team": "Everton", "away_team": "West Ham"},
+      {"home_team": "Fulham", "away_team": "Brighton"},
+      {"home_team": "Man Utd", "away_team": "Ipswich"},
+      {"home_team": "Nott'm Forest", "away_team": "Man City"},
+      {"home_team": "Spurs", "away_team": "Liverpool"},
+      {"home_team": "Wolves", "away_team": "Leicester"}
+    ]
+  },
+  {
+    "gameweek": 34,
+    "start_date": "2025-03-31T00:00:00Z",
+    "end_date": "2025-04-06T23:59:59Z",
+    "deadline": "2025-05-02T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Bournemouth", "away_team": "Nott'm Forest"},
+      {"home_team": "Chelsea", "away_team": "Everton"},
+      {"home_team": "Ipswich", "away_team": "Fulham"},
+      {"home_team": "Man City", "away_team": "Spurs"},
+      {"home_team": "Newcastle", "away_team": "Man Utd"},
+      {"home_team": "Southampton", "away_team": "Brentford"},
+      {"home_team": "West Ham", "away_team": "Liverpool"},
+      {"home_team": "Leicester", "away_team": "Crystal Palace"},
+      {"home_team": "Brighton", "away_team": "Arsenal"},
+      {"home_team": "Aston Villa", "away_team": "Wolves"}
+    ]
+  },
+  {
+    "gameweek": 35,
+    "start_date": "2025-04-07T00:00:00Z",
+    "end_date": "2025-04-13T23:59:59Z",
+    "deadline": "2025-05-09T10:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Newcastle"},
-      {"home_team": "Aston Villa", "away_team": "Spurs"},
-      {"home_team": "Brentford", "away_team": "Fulham"},
-      {"home_team": "Brighton", "away_team": "Liverpool"},
-      {"home_team": "Chelsea", "away_team": "Man Utd"},
-      {"home_team": "Crystal Palace", "away_team": "Wolves"},
-      {"home_team": "Everton", "away_team": "Southampton"},
-      {"home_team": "Leicester", "away_team": "Ipswich"},
-      {"home_team": "Man City", "away_team": "Bournemouth"},
-      {"home_team": "West Ham", "away_team": "Nott'm Forest"}
+      {"home_team": "Aston Villa", "away_team": "Ipswich"},
+      {"home_team": "Brentford", "away_team": "Man Utd"},
+      {"home_team": "Brighton", "away_team": "Wolves"},
+      {"home_team": "Everton", "away_team": "Chelsea"},
+      {"home_team": "Fulham", "away_team": "Leicester"},
+      {"home_team": "Liverpool", "away_team": "West Ham"},
+      {"home_team": "Man City", "away_team": "Southampton"},
+      {"home_team": "Nott'm Forest", "away_team": "Crystal Palace"},
+      {"home_team": "Spurs", "away_team": "Bournemouth"}
+    ]
+  },
+  {
+    "gameweek": 36,
+    "start_date": "2025-04-14T00:00:00Z",
+    "end_date": "2025-04-20T23:59:59Z",
+    "deadline": "2025-05-16T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Bournemouth", "away_team": "Liverpool"},
+      {"home_team": "Arsenal", "away_team": "West Ham"},
+      {"home_team": "Chelsea", "away_team": "Man City"},
+      {"home_team": "Crystal Palace", "away_team": "Everton"},
+      {"home_team": "Ipswich", "away_team": "Brighton"},
+      {"home_team": "Leicester", "away_team": "Aston Villa"},
+      {"home_team": "Man Utd", "away_team": "Southampton"},
+      {"home_team": "Newcastle", "away_team": "Wolves"},
+      {"home_team": "Nott'm Forest", "away_team": "Fulham"},
+      {"home_team": "Spurs", "away_team": "Brentford"}
+    ]
+  },
+  {
+    "gameweek": 37,
+    "start_date": "2025-04-21T00:00:00Z",
+    "end_date": "2025-04-27T23:59:59Z",
+    "deadline": "2025-05-23T10:00:00Z",
+    "fixtures": [
+      {"home_team": "Aston Villa", "away_team": "Liverpool"},
+      {"home_team": "Brentford", "away_team": "Chelsea"},
+      {"home_team": "Brighton", "away_team": "Arsenal"},
+      {"home_team": "Everton", "away_team": "Ipswich"},
+      {"home_team": "Fulham", "away_team": "Man Utd"},
+      {"home_team": "Leicester", "away_team": "Spurs"},
+      {"home_team": "Man City", "away_team": "Newcastle"},
+      {"home_team": "Southampton", "away_team": "West Ham"},
+      {"home_team": "Wolves", "away_team": "Crystal Palace"},
+      {"home_team": "Nott'm Forest", "away_team": "Bournemouth"}
     ]
   },
   {
     "gameweek": 38,
-    "deadline": "2025-05-24T10:00:00Z",
+    "start_date": "2025-04-28T00:00:00Z",
+    "end_date": "2025-05-04T23:59:59Z",
+    "deadline": "2025-05-30T10:00:00Z",
     "fixtures": [
-      {"home_team": "Bournemouth", "away_team": "Leicester"},
-      {"home_team": "Fulham", "away_team": "Man City"},
-      {"home_team": "Ipswich", "away_team": "West Ham"},
-      {"home_team": "Liverpool", "away_team": "Crystal Palace"},
-      {"home_team": "Man Utd", "away_team": "Aston Villa"},
-      {"home_team": "Newcastle", "away_team": "Everton"},
-      {"home_team": "Nott'm Forest", "away_team": "Chelsea"},
-      {"home_team": "Southampton", "away_team": "Arsenal"},
-      {"home_team": "Spurs", "away_team": "Brighton"},
-      {"home_team": "Wolves", "away_team": "Brentford"}
+      {"home_team": "Arsenal", "away_team": "Everton"},
+      {"home_team": "Chelsea", "away_team": "Wolves"},
+      {"home_team": "Crystal Palace", "away_team": "Brentford"},
+      {"home_team": "Ipswich", "away_team": "Aston Villa"},
+      {"home_team": "Liverpool", "away_team": "Fulham"},
+      {"home_team": "Man Utd", "away_team": "Southampton"},
+      {"home_team": "Newcastle", "away_team": "Brighton"},
+      {"home_team": "Nott'm Forest", "away_team": "Man City"},
+      {"home_team": "Spurs", "away_team": "West Ham"},
+      {"home_team": "West Ham", "away_team": "Leicester"}
     ]
   }
 ]
