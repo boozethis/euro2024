@@ -2,11 +2,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const fixturesList = document.getElementById("fixtures-list");
     const fixturesHeader = document.getElementById("fixtures-header");
     const countdownTimer = document.getElementById("countdown-timer");
-    const fixturesUrl = "../../fixtures.json"; // Update the path to the JSON file
+    const fixturesUrl = "fixtures.json"; // Ensure this path is correct
 
     // Fetch fixtures data from the JSON file
     fetch(fixturesUrl)
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             const gameweeks = data.gameweeks;
             const currentDate = new Date();
@@ -19,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             if (currentGameweek) {
+                console.log(`Current Gameweek ID: ${currentGameweek.gameweek}`);
+                console.log(`First fixture kickoff time: ${currentGameweek.start_date}`);
+
                 // Update the header with the current gameweek number
                 fixturesHeader.textContent = `Gameweek ${currentGameweek.gameweek} Fixtures`;
 
@@ -34,11 +42,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 const firstFixtureDate = new Date(currentGameweek.start_date);
                 setCountdown(firstFixtureDate);
             } else {
+                fixturesHeader.textContent = 'Weekly Fixtures';
                 fixturesList.innerHTML = '<p>No fixtures found for the current gameweek. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
             }
         })
         .catch(error => {
             console.error("Error fetching fixtures:", error);
+            fixturesHeader.textContent = 'Weekly Fixtures';
             fixturesList.innerHTML = '<p>Unable to load fixtures. Please disable your adblocker or visit the <a href="https://fantasy.premierleague.com/fixtures" target="_blank">official fixtures page</a>.</p>';
         });
 
