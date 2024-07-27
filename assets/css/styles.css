@@ -242,3 +242,33 @@ ul li {
     align-items: center;
     margin: 0 auto;
 }
+
+#fpl {
+    background: linear-gradient(to right, #00FF87, #02EFFE);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#fpl h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #37003C;
+}
+
+#fpl p {
+    font-size: 18px;
+    color: #37003C;
+}
+
+#fpl a {
+    color: #37003C;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#fpl a:hover, #fpl a:focus {
+    color: #fff;
+}
