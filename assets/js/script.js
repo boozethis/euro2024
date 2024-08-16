@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (distance >= 0) {
                 countdownTimer.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
             } else {
-                countdownTimer.textContent = "The GW${currentGameweek.gameweek} Deadline has passed";
+                countdownTimer.textContent = `The GW${currentGameweek.gameweek} Deadline has passed`;
             }
         }
 
