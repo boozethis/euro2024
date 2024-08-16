@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="description" content="Join Last Man Balling, the ultimate Premier League prediction competition! Predict weekly winners and win big. Pay £5 to enter, join our WhatsApp and/or Telegram group, and compete for the grand Prizepot after 20 weeks.">
+    <meta name="description" content="Join Last Man Balling, the ultimate Premier League prediction competition! Predict weekly winners and win big. Pay £5 to enter, join our WhatsApp group, and compete for the grand Prizepot after 20 weeks.">
     <style>
         /* Inline critical CSS */
         @font-face {
@@ -113,23 +113,30 @@
                 <li><a href="#countdown" class="nav-item">Deadline</a></li>
                 <li><a href="#fixtures" class="nav-item">Fixtures</a></li>
                 <li><a href="#prizepot" class="nav-item">Prizepot</a></li>
-                <li><a href="#rules" class="nav-item">Rules</a></li>            
+                <li><a href="#rules" class="nav-item">Rules</a></li>
+                <li><a href="#join" class="nav-item nav-item-purple">Join</a></li>
+                <li><a href="#fpl" class="nav-item">FPL</a></li>                
                 <li><a href="#faq" class="nav-item">FAQ</a></li>
-                <li><a href="#waitinglist" class="nav-item nav-item-purple">Waiting List</a></li>
-				<li><a href="#join" class="nav-item hidden">Join</a></li>
-                <li><a href="#fpl" class="nav-item hidden">FPL</a></li>   
+                <li><a href="#waitinglist" class="nav-item hidden">Waiting List</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="about">
-            <h2>Last Man Balling</h2>
-            <p class="justify-text">Welcome to Last Man Balling, the ultimate 2024/25 Premier League prediction competition.</p>
+            <h2><p></p></h2>
+            <p class="justify-text">Welcome to Last Man Balling. After the tremendous success of our <a href="/euro2024" target="_blank" rel="external">Euro 2024 competition</a>, we're thrilled to bring you the ultimate 2024/25 Premier League prediction competition.</p>
             <p class="justify-text">Everything is run through WhatsApp, fostering a friendly community vibe where everyone is welcome.</p>
-            <p class="justify-text">Unfortunately signups are now closed and the first half of the 2024/25 game is underway.</p>
-			<p class="justify-text">A new game will begin in Gameweek 21 in January so please join the <a href="#waitinglist">Waiting List</a> if you wish to be alerted to when we are accepting new Ballers.</p>	
-            <p class="justify-text">In the meantime, you can check out the <a href="#rules">Rules</a> section and, if you have any questions, check out the <a href="#faq">FAQ</a> section or reach out to us on 𝕏. Follow us <a href="https://x.com/LastManBalling" target="_blank" rel="external">@LastManBalling</a> for updates, and we welcome any feedback you have.</p>
+            <p class="justify-text">Here's a brief overview of how it works:</p>
+            <ul class="justify-text">
+                <li>💷 Pay £5 to join.</li>
+                <li>🎯 Predict a Premier League team to win each week.</li>
+                <li>🚫 You can only choose each team once.</li>
+                <li>🔢 You get 3 points if your team wins, 1 if they draw and 0 if they lose.</li>
+                <li>🏆 The player with the most points at the end of Gameweek 20 wins the Prizepot.</li>
+                <li>🔄 Then we do it all over again for the remaining 18 Gameweeks. (£5 entry again to play the second half)</li>
+            </ul>
+            <p class="justify-text">For more details, please visit the <a href="#rules">Rules</a> section. If you have any questions, check out the <a href="#faq">FAQ</a> section or reach out to us on 𝕏. Follow us <a href="https://x.com/LastManBalling" target="_blank" rel="external">@LastManBalling</a> for updates, and we welcome any feedback you have.</p>
             <p class="justify-text">Invite your friends and family to join the excitement. The more Ballers, the bigger the <a href="#prizepot">Prizepot</a>.</p>
         </section>
 
@@ -149,12 +156,12 @@
             <div class="prizepot-info">
                 <div class="prizepot-item prizepot-ballers">
                     <span class="icon"><img src="images/ballers-icon.webp" width="80" height="80" alt="Ballers Icon" loading="lazy"></span>
-                    <strong id="ballers-count">61</strong>
+                    <strong id="ballers-count">115</strong>
                     <b>Ballers</b>
                 </div>
                 <div class="prizepot-item prizepot-prizepot">
                     <span class="icon"><img src="images/prizepot-icon.webp" width="80" height="80" alt="Prizepot Icon" loading="lazy"></span>
-                    <strong id="prizepot-amount">£320</strong>
+                    <strong id="prizepot-amount">£567.50</strong>
                     <b>Prizepot</b>
                 </div>
                 <div class="prizepot-item prizepot-remaining">
@@ -188,8 +195,9 @@
 
         </section>
 
-        <section id="join" class="hidden">
-            <h2>Join the Competition</h2>            <div id="payment">
+        <section id="join">
+            <h2>Join the Competition</h2>
+            <div id="payment">
                 <script async src="https://js.stripe.com/v3/buy-button.js"></script>
                 <stripe-buy-button
                     buy-button-id="buy_btn_1PaiS7FqQhAnLWYKdrEpbHdB"
@@ -198,7 +206,7 @@
             </div>
         </section>
 
-        <section id="fpl" class="hidden">
+        <section id="fpl">
     <h2>FPL</h2>
     <p>We also have a just-for-fun Fantasy Premier League classic mini-league that anyone can join using code <strong>gc6yol</strong> or via <a href="https://fantasy.premierleague.com/leagues/auto-join/gc6yol" target="_blank" rel="external">this autojoin link</a>.</p>
 <p>Big thanks to the mods of r/FantasyPL for allowing me to promote Last Man Balling on Reddit!</p>
@@ -216,7 +224,7 @@
             </div>
             <div class="faq-item">
                 <h3>How do I pay?</h3>
-                <div class="faq-content" style="display: none; text-align: justify;">All payments are taken via Stripe. When the game reopens for signups, a link to pay will be provided. Stripe accepts all major credit and debit cards, Apple Pay, and Google Pay.</div>
+                <div class="faq-content" style="display: none; text-align: justify;">All payments are taken via Stripe. <a href="https://buy.stripe.com/5kA03v8ba7VT16E147" target="_blank" rel="external">Click here to pay</a>. Stripe accepts all major credit and debit cards, Apple Pay, and Google Pay.</div>
             </div>
             <div class="faq-item">
                 <h3>When is the deadline to submit my selection?</h3>
@@ -240,7 +248,7 @@
             </div>
             <div class="faq-item">
                 <h3>Can I submit my selections way ahead of the deadline, or even for all 20 Gameweeks?</h3>
-                <div class="faq-content" style="display: none; text-align: justify;">Yes of course, you are more than welcome to do this. You may use <a href="https://akr.st/2425" target="_blank" rel="external">this form</a> if you wish to submit your selections way in advance of the Gameweek deadlines. You are still welcome to edit any selections made using the form, so long as you do so before the relevant gameweek deadline.</div>
+                <div class="faq-content" style="display: none; text-align: justify;">Yes of course, you are more than welcome to do this. Please get in touch on <a href="https://akr.st/lmbwa" target="_blank" rel="external">WhatsApp</a> if you wish to submit your selections way in advance of the Gameweek deadlines.</div>
             </div>
             <div class="faq-item">
                 <h3>What if the team I select has their game postponed?</h3>
@@ -278,7 +286,7 @@
             </div>
         </section>
             
-        <section id="waitinglist">
+        <section id="waitinglist" class="hidden">
             <h2>Waiting List</h2>
             <p>If you missed the chance to sign up before Gameweek 1, you can join the waiting list to be notified for the next game, starting in Gameeek 21 in January.</p>
             <div id="waitinglist-form">
