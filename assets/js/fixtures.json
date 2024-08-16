@@ -147,7 +147,7 @@
     "gameweek": 9,
     "start_date": "2024-10-21T00:00:00Z",
     "end_date": "2024-10-27T23:59:59Z",
-    "deadline": "2024-10-26T10:00:00Z",
+    "deadline": "2024-10-25T19:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Liverpool"},
       {"home_team": "Aston Villa", "away_team": "Bournemouth"},
@@ -237,7 +237,7 @@
     "gameweek": 14,
     "start_date": "2024-12-02T00:00:00Z",
     "end_date": "2024-12-04T23:59:59Z",
-    "deadline": "2024-12-03T18:15:00Z",
+    "deadline": "2024-12-03T18:45:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Man Utd"},
       {"home_team": "Aston Villa", "away_team": "Brentford"},
@@ -255,7 +255,7 @@
     "gameweek": 15,
     "start_date": "2024-12-05T00:00:00Z",
     "end_date": "2024-12-08T23:59:59Z",
-    "deadline": "2024-12-07T13:30:00Z",
+    "deadline": "2024-12-07T14:00:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "Southampton"},
       {"home_team": "Brentford", "away_team": "Newcastle"},
@@ -273,7 +273,7 @@
     "gameweek": 16,
     "start_date": "2024-12-09T00:00:00Z",
     "end_date": "2024-12-15T23:59:59Z",
-    "deadline": "2024-12-14T13:30:00Z",
+    "deadline": "2024-12-14T14:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Everton"},
       {"home_team": "Bournemouth", "away_team": "West Ham"},
@@ -291,7 +291,7 @@
     "gameweek": 17,
     "start_date": "2024-12-16T00:00:00Z",
     "end_date": "2024-12-22T23:59:59Z",
-    "deadline": "2024-12-21T13:30:00Z",
+    "deadline": "2024-12-21T14:00:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "Man City"},
       {"home_team": "Brentford", "away_team": "Nottm Forest"},
@@ -309,7 +309,7 @@
     "gameweek": 18,
     "start_date": "2024-12-23T00:00:00Z",
     "end_date": "2024-12-27T23:59:59Z",
-    "deadline": "2024-12-26T13:30:00Z",
+    "deadline": "2024-12-26T14:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Ipswich"},
       {"home_team": "Bournemouth", "away_team": "Crystal Palace"},
@@ -327,7 +327,7 @@
     "gameweek": 19,
     "start_date": "2024-12-28T00:00:00Z",
     "end_date": "2024-12-30T23:59:59Z",
-    "deadline": "2024-12-29T13:30:00Z",
+    "deadline": "2024-12-29T14:00:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "Brighton"},
       {"home_team": "Brentford", "away_team": "Arsenal"},
@@ -345,7 +345,7 @@
     "gameweek": 20,
     "start_date": "2024-12-31T00:00:00Z",
     "end_date": "2025-01-05T23:59:59Z",
-    "deadline": "2025-01-04T13:30:00Z",
+    "deadline": "2025-01-04T14:00:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "Leicester"},
       {"home_team": "Bournemouth", "away_team": "Everton"},
@@ -381,7 +381,7 @@
     "gameweek": 22,
     "start_date": "2025-01-13T00:00:00Z",
     "end_date": "2025-01-19T23:59:59Z",
-    "deadline": "2025-01-18T13:30:00Z",
+    "deadline": "2025-01-18T14:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Aston Villa"},
       {"home_team": "Brentford", "away_team": "Liverpool"},
@@ -399,7 +399,7 @@
     "gameweek": 23,
     "start_date": "2025-01-20T00:00:00Z",
     "end_date": "2025-01-26T23:59:59Z",
-    "deadline": "2025-01-25T13:30:00Z",
+    "deadline": "2025-01-25T14:00:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "West Ham"},
       {"home_team": "Bournemouth", "away_team": "Nottm Forest"},
@@ -417,7 +417,7 @@
     "gameweek": 24,
     "start_date": "2025-01-27T00:00:00Z",
     "end_date": "2025-02-02T23:59:59Z",
-    "deadline": "2025-02-01T13:30:00Z",
+    "deadline": "2025-02-01T14:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Man City"},
       {"home_team": "Bournemouth", "away_team": "Liverpool"},
@@ -435,7 +435,7 @@
     "gameweek": 25,
     "start_date": "2025-02-10T00:00:00Z",
     "end_date": "2025-02-16T23:59:59Z",
-    "deadline": "2025-02-15T13:30:00Z",
+    "deadline": "2025-02-15T14:00:00Z",
     "fixtures": [
       {"home_team": "Aston Villa", "away_team": "Ipswich"},
       {"home_team": "Brighton", "away_team": "Chelsea"},
@@ -453,7 +453,7 @@
     "gameweek": 26,
     "start_date": "2025-02-17T00:00:00Z",
     "end_date": "2025-02-23T23:59:59Z",
-    "deadline": "2025-02-22T13:30:00Z",
+    "deadline": "2025-02-22T14:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "West Ham"},
       {"home_team": "Aston Villa", "away_team": "Chelsea"},
@@ -489,7 +489,7 @@
     "gameweek": 28,
     "start_date": "2025-03-03T00:00:00Z",
     "end_date": "2025-03-09T23:59:59Z",
-    "deadline": "2025-03-08T13:30:00Z",
+    "deadline": "2025-03-08T14:00:00Z",
     "fixtures": [
       {"home_team": "Brentford", "away_team": "Aston Villa"},
       {"home_team": "Brighton", "away_team": "Fulham"},
@@ -507,7 +507,7 @@
     "gameweek": 29,
     "start_date": "2025-03-10T00:00:00Z",
     "end_date": "2025-03-16T23:59:59Z",
-    "deadline": "2025-03-15T13:30:00Z",
+    "deadline": "2025-03-15T14:00:00Z",
     "fixtures": [
       {"home_team": "Arsenal", "away_team": "Chelsea"},
       {"home_team": "Aston Villa", "away_team": "Liverpool"},
@@ -669,7 +669,7 @@
     "gameweek": 38,
     "start_date": "2025-05-20T00:00:00Z",
     "end_date": "2025-06-17T23:59:59Z",
-    "deadline": "2025-05-25T13:30:00Z",
+    "deadline": "2025-05-25T14:00:00Z",
     "fixtures": [
       {"home_team": "Bournemouth", "away_team": "Leicester"},
       {"home_team": "Fulham", "away_team": "Man City"},
